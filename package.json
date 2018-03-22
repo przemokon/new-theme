@@ -1,9 +1,12 @@
 {
   "name": "gulp-prestashop",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "gulp-install": "^1.1.0",
+    "gulp-util": "^3.0.8"
+  },
   "devDependencies": {
-    "gulp": "^3.8.5",
+    "gulp": "^3.9.1",
     "gulp-changed": "^0.4.0",
     "gulp-jshint": "^1.6.4",
     "gulp-minify-css": "^0.3.6",
