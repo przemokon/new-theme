@@ -1,0 +1,113 @@
+/********************************************************
+			One-Page Checkout Styles
+********************************************************/
+.box {
+  padding-bottom: 20px; }
+
+.cart_navigation {
+  margin-bottom: 53px; }
+
+.lost_password {
+  display: inline-block;
+  text-decoration: underline;
+  margin: 5px 0 14px; }
+  .lost_password:hover {
+    text-decoration: none; }
+
+.title_block {
+  color: #333;
+  padding: 3px 0 6px; }
+
+.opc-button {
+  padding: 11px 0 0 0; }
+
+.bullet {
+  line-height: 22px;
+  margin-bottom: 5px; }
+
+.date-select {
+  padding-bottom: 10px; }
+
+.opc-add-save {
+  border-top: 1px solid #d6d4d4;
+  margin-top: 20px;
+  padding-top: 20px; }
+
+#message {
+  margin-bottom: 35px; }
+
+#opc_payment_methods {
+  margin-bottom: 30px; }
+  #opc_payment_methods p.warning {
+    color: #F13340;
+    font-weight: 700; }
+
+#opc_account {
+  margin-bottom: 30px; }
+
+.address_delivery.select {
+  margin-bottom: 15px; }
+
+#address_invoice_form.form-group {
+  margin-bottom: 30px; }
+
+#new_account_form .id_state,
+#new_account_form .dni,
+#new_account_form .postcode {
+  display: none; }
+
+.form {
+  max-width: 500px;
+  margin: 0 auto; }
+
+.cgv-unchecked {
+  color: #a94442 !important; }
+
+.cart_voucher {
+  margin-bottom: 15px; }
+
+.login-form {
+  position: fixed;
+  top: 25px;
+  max-width: 500px;
+  background: #fff;
+  padding: 15px;
+  margin: 0 auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  left: 0;
+  right: 0;
+  transition: all .5s ease;
+  transform: scale(0);
+  z-index: 1001; }
+  .login-form.active {
+    transform: scale(1); }
+
+.login-form__overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  transition: all .3s ease;
+  opacity: 0;
+  visibility: hidden; }
+  .login-form__overlay.active {
+    visibility: visible;
+    opacity: 1; }
+
+.hide_login-form {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 18px;
+  padding: 5px; }
+
+.is_registred {
+  color: #a94442; }
+
+.openLoginFormBlock {
+  text-decoration: underline; }
+
+/*# sourceMappingURL=order-opc.css.map */
