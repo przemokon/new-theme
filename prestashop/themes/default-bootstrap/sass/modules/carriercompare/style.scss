@@ -1,88 +1,103 @@
-@import '../../_theme_variables';
+@import '../../theme_variables';
+
 #compare_shipping {
 
-	.form-group {
-		line-height:normal;
-		margin-bottom:10px;
+  .form-group {
+    line-height: normal;
+    margin-bottom: 10px;
 
-		label {margin-bottom:6px;}
+    label {
+      margin-bottom: 6px;
+    }
 
-		.form-control {
-			width:263px;
-		}
+    .form-control {
+      width: 263px;
+    }
 
-		&.last {
-			margin-bottom:20px;
-			input {margin-bottom:3px;}
-		}
-	}
+    &.last {
+      margin-bottom: 20px;
 
-	.table {
-		background:$light-background;
+      input {
+        margin-bottom: 3px;
+      }
+    }
+  }
 
-		thead {
+  .table {
+    background: $light-background;
 
-			tr {
+    thead {
 
-				th {
-					background:$light-background;
-					padding:4px 10px 3px 10px;
-				}
-			}
-		}
-		tbody {
+      tr {
 
-			td {
-				margin:0;
+        th {
+          background: $light-background;
+          padding: 4px 10px 3px;
+        }
+      }
+    }
 
-				&.carrier_action {
-					width:54px;
-					padding-left:0;
-					padding-right:0;
-					text-align:center;
+    tbody {
 
-					input {
-						margin:0;
-					}
-				}
-			}
-		}
-	}
+      td {
+        margin: 0;
+
+        &.carrier_action {
+          width: 54px;
+          padding-left: 0;
+          padding-right: 0;
+          text-align: center;
+
+          input {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
 }
+
 #availableCarriers {
 
-	.table {
-		margin-bottom:20px;
-	}
+  .table {
+    margin-bottom: 20px;
+  }
 }
+
 #compare_shipping ul#carriercompare_errors_list {
-	color: red;
+  color: #f00;
 }
-#compare_shipping_form { padding-bottom:20px;}
+
+#compare_shipping_form {
+  padding-bottom: 20px;
+}
+
 #compare_shipping ul#carriercompare_errors_list li {
-	margin-left: 30px;
-	text-decoration: none;
-	list-style: none;
+  margin-left: 30px;
+  text-decoration: none;
+  list-style: none;
 }
 
-#SE_AjaxDisplay
-{
-	text-align: center;
-	display: none;
+#SE_AjaxDisplay {
+  text-align: center;
+  display: none;
 }
 
-#SE_AjaxDisplay img
-{
-	width: 15px;
+#SE_AjaxDisplay img {
+  width: 15px;
 }
+
 .SE_SubmitRefreshCard {
 
-	button {
-		float:left;
+  button {
+    float: left;
 
-		&#carriercompare_submit {
-			margin-right:10px;
-		}
-	}
+    &#carriercompare_submit {
+      margin-right: 10px;
+    }
+  }
 }
-#carriercompare_errors {display:none;}
+
+#carriercompare_errors {
+  display: none;
+}

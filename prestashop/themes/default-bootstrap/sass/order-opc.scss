@@ -1,125 +1,138 @@
-@import "theme_variables";
+@import 'theme_variables';
 
-/********************************************************
-			One-Page Checkout Styles
-********************************************************/
+// One-Page Checkout Styles
+.box {
+  padding-bottom: 20px;
+}
 
+.cart_navigation {
+  margin-bottom: 53px;
+}
 
-	.box {
-		padding-bottom: 20px;
-	}
+.lost_password {
+  display: inline-block;
+  text-decoration: underline;
+  margin: 5px 0 14px;
 
-	.cart_navigation {
-		margin-bottom: 53px;
-	}
-	.lost_password {
-		display: inline-block;
-		text-decoration: underline;
-		margin: 5px 0 14px;
-		&:hover {
-			text-decoration: none;
-		}
-	}
-	.title_block {
-		color: $base-text-color;
-		padding: 3px 0 6px;
-	}
-	.opc-button {
-		padding: 11px 0 0 0;
-	}
-	.bullet {
-		line-height: 22px;
-		margin-bottom: 5px;
-	}
-	.date-select {
-		padding-bottom: 10px;
-	}
-	.opc-add-save {
-		border-top: 1px solid $base-border-color;
-		margin-top: 20px;
-		padding-top: 20px;
-	}
-	#message {
-		margin-bottom: 35px;
-	}
-	#opc_payment_methods {
-		margin-bottom: 30px;
-		p.warning{
-			color: #F13340;
-			font-weight: 700;
-		}
-	}
-	#opc_account {
-		margin-bottom: 30px;
-	}
-	.address_delivery.select {
-		margin-bottom: 15px;
-	}
-	#address_invoice_form.form-group {
-		margin-bottom: 30px;
-	}
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.title_block {
+  color: $base-text-color;
+  padding: 3px 0 6px;
+}
+
+.bullet {
+  line-height: 22px;
+  margin-bottom: 5px;
+}
+
+.date-select {
+  padding-bottom: 10px;
+}
+
+.opc-add-save {
+  border-top: 1px solid $base-border-color;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+#message {
+  margin-bottom: 35px;
+}
+
+#opc_payment_methods {
+  margin-bottom: 30px;
+
+  p.warning {
+    color: #f13340;
+    font-weight: 700;
+  }
+}
+
+#opc_account {
+  margin-bottom: 30px;
+}
+
+.address_delivery.select {
+  margin-bottom: 15px;
+}
+
+#address_invoice_form.form-group {
+  margin-bottom: 30px;
+}
 
 
 #new_account_form .id_state,
 #new_account_form .dni,
 #new_account_form .postcode {
-	display: none;
+  display: none;
 }
+
 .form {
-    max-width: 500px;
-    margin: 0 auto;
+  max-width: 500px;
+  margin: 0 auto;
 }
+
 .cgv-unchecked {
-   color: $alert-danger-text !important;
+  color: $alert-danger-text !important;
 }
+
 .cart_voucher {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
-.login-form { 
-	position: fixed;
-    top: 25px;
-    max-width: 500px;
-    background: #fff;
-    padding: 15px;
-    margin: 0 auto;
-    box-shadow: 0 0 5px rgba(0,0,0,0.4);
-    left: 0;
-    right: 0;
-    transition: all .5s ease;
-    transform: scale(0);
-    z-index: 1001;
+.login-form {
+  position: fixed;
+  top: 25px;
+  max-width: 500px;
+  background: #fff;
+  padding: 15px;
+  margin: 0 auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+  left: 0;
+  right: 0;
+  transition: .5s ease;
+  transform: scale(0);
+  z-index: 1001;
 
-    &.active {
-    	transform: scale(1);
-    }
-}  
+  &.active {
+    transform: scale(1);
+  }
+}
+
 .login-form__overlay {
-   	position: fixed;
-   	left:0;
-   	top: 0;
-   	width: 100%;
-   	height: 100%;
-   	background: rgba(0,0,0,0.5);
-   	z-index: 1000;
-    transition: all .3s ease;
-    opacity: 0;
-    visibility: hidden;
-    &.active {
-    	visibility: visible;
-    	opacity: 1;  
-    }  
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+  z-index: 1000;
+  transition: .3s ease;
+  opacity: 0;
+  visibility: hidden;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
 }
+
 .hide_login-form  {
-	position: absolute;
-	top: 0;
-	right:0;
-	font-size: $font-size-large;
-    padding: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: $font-size-large;
+  padding: 5px;
 }
+
 .is_registred {
-	color: $alert-danger-text;
+  color: $alert-danger-text;
 }
+
 .openLoginFormBlock {
-	text-decoration: underline;
-} 
+  text-decoration: underline;
+}

@@ -1,6 +1,3 @@
-/*******************************************************
-				Addresses Styles
-********************************************************/
 #addresses #center_column .page-heading {
   margin: 0 0 22px; }
 
@@ -10,8 +7,8 @@
     margin: 0 0 27px; }
 
 .address li.address_update {
-  margin: 14px 0 6px 0; }
+  margin: 14px 0 6px; }
   .address li.address_update a {
-    margin: 0 10px 0 0; }
+    margin: 0 10px; }
 
 /*# sourceMappingURL=addresses.css.map */

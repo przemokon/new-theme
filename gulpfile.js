@@ -11,6 +11,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var path = require('path');
 var minifycss = require('gulp-minify-css');
 var changed = require('gulp-changed');
+var sassLint = require('gulp-sass-lint');
 
 //General
 var psProjectDir = 'prestashop';
@@ -21,12 +22,11 @@ var paths = {
     prestashopSassFiles: './' + psProjectDir + '/themes/default-bootstrap/sass/**/*.scss',
     prestashopCssDir: './' + psProjectDir + '/themes/default-bootstrap/css',
     prestashopJsFiles: './' + psProjectDir + '/themes/default-bootstrap/js/**/*.js',
-    prestashopJsDir: './' + psProjectDir + '/themes/default-bootstrap/js/'
-};
-var sassConfig = {
-    style: 'expanded',
-    compass: true,
-    loadPath: [projectDir + '/prestashop/themes/'+ themeName +'/sass']
+    prestashopJsDir: './' + psProjectDir + '/themes/default-bootstrap/js/',
+
+    // experiment
+    psSassFiles: './' + psProjectDir + '/themes/default-bootstrap/sass/*.scss',
+    psSassModulesFiles: './' + psProjectDir + '/themes/default-bootstrap/sass/modules/**/*.scss'
 };
 
 /*
@@ -54,15 +54,23 @@ gulp.task('lint', function() {
 /* Task
 * Compile our prestashop SASS files
 */
-// gulp.task('sass', function() {
-//     return gulp.src(paths.prestashopSassFiles)
-//         .pipe(changed(paths.prestashopCssDir,{ extension: '.css' }))
-//         .pipe(sass(sassConfig))
-//         .pipe(gulp.dest(paths.prestashopCssDir));
-// });
-
 gulp.task('sass', function() {
-    return gulp.src(paths.prestashopSassFiles)
+    return gulp.src([paths.psSassFiles, paths.psSassModulesFiles])
+        .pipe(sassLint({
+            rules: {
+                'property-sort-order': 0,
+                'no-color-literals': 0,
+                'force-element-nesting': 0,
+                'class-name-format': 0,
+                'no-ids': 0,
+                'nesting-depth': 0,
+                'no-qualifying-elements': 0,
+                'force-pseudo-nesting': 0,
+                'variable-name-format': 0,
+                'no-important': 0
+            }
+        }))
+        .pipe(sassLint.format())
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(changed(paths.prestashopCssDir, {extension: '.css'}))
@@ -75,7 +83,7 @@ gulp.task('sass', function() {
 */
 gulp.task('watch', function() {
     gulp.watch(paths.prestashopJsFiles, ['lint']);
-    gulp.watch(paths.prestashopSassFiles, ['sass']);
+    gulp.watch([paths.psSassFiles, paths.psSassModulesFiles], ['sass']);
 });
 
 // Default Task

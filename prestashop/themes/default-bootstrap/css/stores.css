@@ -1,6 +1,3 @@
-/***********************************************************
-					Stores Page Styles
-************************************************************/
 #stores #map {
   width: 100%;
   height: 447px;
@@ -16,7 +13,7 @@
   @media (max-width: 767px) {
     #stores .address-input {
       width: 100%;
-      margin: 0 0 20px 0; } }
+      margin: 0 0 20px; } }
   #stores .address-input label {
     margin-right: 5px; }
 

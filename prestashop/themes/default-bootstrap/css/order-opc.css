@@ -1,6 +1,3 @@
-/********************************************************
-			One-Page Checkout Styles
-********************************************************/
 .box {
   padding-bottom: 20px; }
 
@@ -17,9 +14,6 @@
 .title_block {
   color: #333;
   padding: 3px 0 6px; }
-
-.opc-button {
-  padding: 11px 0 0 0; }
 
 .bullet {
   line-height: 22px;
@@ -39,7 +33,7 @@
 #opc_payment_methods {
   margin-bottom: 30px; }
   #opc_payment_methods p.warning {
-    color: #F13340;
+    color: #f13340;
     font-weight: 700; }
 
 #opc_account {
@@ -76,7 +70,7 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
   left: 0;
   right: 0;
-  transition: all .5s ease;
+  transition: .5s ease;
   transform: scale(0);
   z-index: 1001; }
   .login-form.active {
@@ -90,7 +84,7 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1000;
-  transition: all .3s ease;
+  transition: .3s ease;
   opacity: 0;
   visibility: hidden; }
   .login-form__overlay.active {

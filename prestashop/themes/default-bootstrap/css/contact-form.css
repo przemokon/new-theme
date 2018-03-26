@@ -1,24 +1,24 @@
 .contact-title {
-  margin: -5px 0 0px 0;
+  margin: -5px 0 0;
   line-height: 23px; }
   .contact-title i {
     font-size: 23px;
     color: #c0c0c0;
-    padding: 0 8px 0 0; }
+    padding: 0 8px; }
 
 .contact-form-box {
-  padding: 23px 0 0 0;
-  margin: 0 0 30px 0;
-  background: url(../img/contact-form.png) repeat-x #fff; }
+  padding: 23px 0 0;
+  margin: 0 0 30px;
+  background: url("../img/contact-form.png") repeat-x #fff; }
   .contact-form-box fieldset {
-    padding: 0 19px 21px 19px;
-    background: url(../img/form-contact-shadow.png) center bottom no-repeat;
+    padding: 0 19px 21px;
+    background: url("../img/form-contact-shadow.png") center bottom no-repeat;
     background-size: contain; }
   .contact-form-box label {
-    margin: 0 0 6px 0; }
+    margin: 0 0 6px; }
   .contact-form-box .page-subheading {
-    padding-left: 0px;
-    border: none;
+    padding-left: 0;
+    border: 0;
     margin-bottom: 0; }
   .contact-form-box .col-md-3 {
     padding-left: 0; }

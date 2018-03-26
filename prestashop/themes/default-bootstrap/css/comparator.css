@@ -1,6 +1,3 @@
-/********************************************************************
-					Compare Page Styles
-********************************************************************/
 table#product_comparison tbody tr td.product-block {
   vertical-align: top;
   padding: 14px 19px 19px;
@@ -26,7 +23,7 @@ table#product_comparison tbody tr td.td_empty {
 
 table#product_comparison .remove {
   text-align: right;
-  padding: 0 0 15px 0; }
+  padding: 0 0 15px; }
   table#product_comparison .remove a {
     font-size: 23px;
     line-height: 23px;
@@ -41,16 +38,16 @@ table#product_comparison .product-image-block {
     padding: 9px;
     border: 1px solid #d6d4d4;
     display: inline-block;
-    margin: 0 0 8px 0; }
+    margin: 0 0 8px; }
     table#product_comparison .product-image-block .product_image img {
       width: 100%; }
 
 table#product_comparison h5 {
-  padding: 0 0 8px 0;
+  padding: 0 0 8px;
   min-height: 54px; }
 
 table#product_comparison .prices-container {
-  padding: 0 0 5px 0; }
+  padding: 0 0 5px; }
 
 table#product_comparison .comparison_availability_statut {
   display: none;
@@ -64,9 +61,10 @@ table#product_comparison .product_discount {
     font-weight: 700; }
 
 table#product_comparison .product_desc {
-  padding: 0 0 12px 0; }
+  padding: 0 0 12px; }
 
-table#product_comparison .button-container a, table#product_comparison .button-container > span {
+table#product_comparison .button-container a,
+table#product_comparison .button-container > span {
   margin-bottom: 10px; }
 
 table#product_comparison .comparison_unit_price {
@@ -84,7 +82,7 @@ table#product_comparison .comparison_feature .product_name {
   display: none; }
 
 .footer_link {
-  margin: 0 0 20px 0; }
+  margin: 0 0 20px; }
 
 #stOCClose {
   width: 29px !important;
@@ -121,11 +119,9 @@ table#product_comparison .comparison_feature .product_name {
 .stArrow {
   display: none !important; }
 
-/***** IE code ****/
 .ie8 table#product_comparison .product-image-block .product_image img {
   width: auto; }
 
-/**** responsive code ******/
 @media (max-width: 992px) {
   #columns table#product_comparison tbody tr td.td_empty span {
     font-size: 14px; }
@@ -150,11 +146,11 @@ table#product_comparison .comparison_feature .product_name {
   #product_comparison tr {
     overflow: hidden; }
     #product_comparison tr:last-child {
-      border-bottom: none; }
+      border-bottom: 0; }
       #product_comparison tr:last-child td {
-        border-bottom: none; }
+        border-bottom: 0; }
   #product_comparison td {
-    border: none;
+    border: 0;
     position: relative;
     white-space: normal;
     float: left;
@@ -163,7 +159,7 @@ table#product_comparison .comparison_feature .product_name {
       width: 100% !important;
       clear: both; }
     #product_comparison td:last-child {
-      border-bottom: none; }
+      border-bottom: 0; }
   #product_comparison .comparison_feature .feature-name {
     width: 100%;
     float: none;
