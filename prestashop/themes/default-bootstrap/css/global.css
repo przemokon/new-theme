@@ -8905,7 +8905,7 @@ form#sendComment h3 {
     content: '\f006';
     font-family: "Font Awesome";
     display: inline-block;
-    color: #777676; }
+    color: #777; }
 
 div.star.star_on {
   display: block; }

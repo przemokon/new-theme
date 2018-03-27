@@ -19,7 +19,8 @@ var themeName = 'default-bootstrap';
 var projectDir = path.resolve(__dirname);
 
 var paths = {
-    prestashopSassFiles: './' + psProjectDir + '/themes/default-bootstrap/sass/**/*.scss',
+    prestashopSassFiles: './' + psProjectDir + '/themes/default-bootstrap/sass/**/[^_]*.scss', // exclude bootstrap_lib & font-awesome files
+    // prestashopSassFiles: './' + psProjectDir + '/themes/default-bootstrap/sass/**{*.scss,!(bootstrap_lib|font-awesome)}/[^_]*.scss' // exclude bootstrap_lib & font-awesome dirs (not working)
     prestashopCssDir: './' + psProjectDir + '/themes/default-bootstrap/css',
     prestashopJsFiles: './' + psProjectDir + '/themes/default-bootstrap/js/**/*.js',
     prestashopJsDir: './' + psProjectDir + '/themes/default-bootstrap/js/',
@@ -55,11 +56,11 @@ gulp.task('lint', function() {
 * Compile our prestashop SASS files
 */
 gulp.task('sass', function() {
-    return gulp.src([paths.psSassFiles, paths.psSassModulesFiles])
+    return gulp.src(paths.prestashopSassFiles)
         .pipe(sassLint({
             rules: {
                 'property-sort-order': 0,
-                'no-color-literals': 0,
+                'no-color-literals': 1,
                 'force-element-nesting': 0,
                 'class-name-format': 0,
                 'no-ids': 0,
@@ -67,7 +68,9 @@ gulp.task('sass', function() {
                 'no-qualifying-elements': 0,
                 'force-pseudo-nesting': 0,
                 'variable-name-format': 0,
-                'no-important': 0
+                'no-important': 0,
+                'force-attribute-nesting': 0,
+                'mixin-name-format': 0
             }
         }))
         .pipe(sassLint.format())

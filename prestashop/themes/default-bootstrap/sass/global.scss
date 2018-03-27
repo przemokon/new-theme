@@ -186,7 +186,7 @@ label {
   line-height: 16px;
 
   label {
-    color: #777;
+    color: $boulder;
   }
 }
 
@@ -301,7 +301,7 @@ label {
 
   i.left {
     padding-right: 8px;
-    color: #777;
+    color: $boulder;
   }
 }
 
@@ -1627,7 +1627,7 @@ div.star a:hover {
     }
 
     &:hover {
-      color: #777;
+      color: $boulder;
     }
   }
 }
@@ -1645,7 +1645,7 @@ div.star a:hover {
   }
 
   #footer {
-    color: #777;
+    color: $boulder;
 
     .row {
       position: relative;
@@ -1664,7 +1664,7 @@ div.star a:hover {
     }
 
     a {
-      color: #777;
+      color: $boulder;
 
       &:hover {
         color: $light-text-color;
@@ -1836,7 +1836,7 @@ div.star a:hover {
     margin: 9px 0 0;
 
     i {
-      color: #777;
+      color: $boulder;
       margin-right: 8px;
     }
 
@@ -3060,7 +3060,7 @@ form#sendComment h3 {
     content: '\f006';
     font-family: $font-icon;
     display: inline-block;
-    color: #777676;
+    color: $boulder;
   }
 }
 

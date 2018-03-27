@@ -1,13 +1,3 @@
-/*
-Uniform Theme: Uniform Default
-Version: 1.8
-By: Josh Pyles
-License: MIT License
----
-For use with the Uniform plugin:
-http://uniformjs.com/
-
-*/
 /* General settings */
 div.selector,
 div.selector span,
@@ -315,15 +305,11 @@ div.button {
       background-position: right -604px;
       cursor: default; }
 
-/* INPUT & TEXTAREA */
-/* ************************************************************************************************
-		uniform
-************************************************************************************************ */
 input.uniform-input,
 select.uniform-multiselect,
 textarea.uniform {
   font-size: 13px;
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-weight: normal;
   line-height: 18px;
   color: #777;
@@ -333,16 +319,14 @@ textarea.uniform {
   select.uniform-multiselect.focus,
   textarea.uniform.hover,
   textarea.uniform.focus {
-    -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
     border-color: #cbcaca; }
 
-/* PRESENTATION */
-/* Buttons */
 div.button span {
   font-weight: bold;
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size: 12px;
   letter-spacing: 1px;
   text-transform: uppercase; }
@@ -353,7 +337,6 @@ div.button.hover span, div.button.focus span {
 div.button.disabled span, div.button.disabled.active span {
   color: #bbb; }
 
-/* Select */
 #compare_shipping .form-group label {
   display: block; }
 
@@ -363,7 +346,7 @@ div.selector {
     color: #666;
     text-shadow: 0 1px 0 #fff; }
   div.selector select {
-    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
     font-size: 12px; }
   div.selector.disabled span, div.selector.disabled.active span {
     color: #bbb; }
@@ -371,13 +354,16 @@ div.selector {
 .checker span input {
   margin: 0 !important; }
 
-.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+.radio input[type='radio'],
+.radio-inline input[type='radio'],
+.checkbox input[type='checkbox'],
+.checkbox-inline input[type='checkbox'] {
   margin: 0 !important; }
 
-.radio-inline, .checkbox-inline {
+.radio-inline,
+.checkbox-inline {
   cursor: default; }
 
-/* Checker */
 div.checker {
   cursor: pointer;
   margin-right: 5px; }
@@ -388,16 +374,14 @@ div.checker {
 #layered_form div.checker {
   display: inline; }
 
-/* Radio */
 div.radio {
   margin-right: 3px; }
   div.radio span {
     position: relative;
     top: -2px; }
 
-/* Uploader */
 div.uploader span.action {
-  text-shadow: rgba(0, 0, 0, 0.1) 0px 1px 0px;
+  text-shadow: rgba(0, 0, 0, 0.1) 0 1px 0;
   font-size: 13px;
   font-weight: bold;
   color: #fff; }
