@@ -225,16 +225,12 @@
 
       &#button_order_cart {
         margin-right: 0;
-        border: 0;
+        padding: 7px 0;
+        font-size: 1.1em;
+        border: solid 1px lighten($chateau-green, 10%);
+        background: $chateau-green;
 
-        span {
-          padding: 7px 0;
-          font-size: 1.1em;
-          border: solid 1px lighten($chateau-green, 10%);
-          background: $chateau-green;
-        }
-
-        &:hover span {
+        &:hover {
           border: solid 1px darken($chateau-green, 10%);
           background: darken($chateau-green, 15%);
           color: $light-text-color;
@@ -290,14 +286,6 @@
       color: $light-text-color;
     }
 
-    dt {
-      background: url('../../../img/cart-shadow.png') repeat-x;
-
-      &.first_item {
-        background: none;
-      }
-    }
-
     .product-atributes {
       padding-bottom: 10px;
       font-size: 11px;
@@ -313,11 +301,11 @@
 
     .cart-prices {
       border: 0;
-      background: url('../../../img/cart-shadow.png') repeat-x $mine-shaft;
+      background: $mine-shaft;
     }
 
     .cart-buttons {
-      background: url('../../../img/cart-shadow.png') repeat-x $dark-background;
+      background: $dark-background;
     }
   }
 

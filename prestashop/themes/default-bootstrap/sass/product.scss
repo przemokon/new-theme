@@ -622,7 +622,6 @@ span.view_scroll_spacer {
       line-height: 47px;
       text-shadow: 0 1px $orient;
       content: '\f07a';
-      z-index: 2;
       width: 51px;
       text-align: center;
       border: 1px solid $cerulean;
@@ -650,14 +649,12 @@ span.view_scroll_spacer {
     }
 
     &::after {
-      background: url('../img/border-1.gif') repeat-y 0 0;
       position: absolute;
       top: 0;
       bottom: 0;
       left: 51px;
       content: '';
       width: 1px;
-      z-index: 2;
       @media (max-width: $screen-sm-max) { // max 991px
         display: none;
       }

@@ -442,7 +442,6 @@ span.view_scroll_spacer {
       line-height: 47px;
       text-shadow: 0 1px #015883;
       content: '\f07a';
-      z-index: 2;
       width: 51px;
       text-align: center;
       border: 1px solid #009ad0; }
@@ -457,14 +456,12 @@ span.view_scroll_spacer {
       animation: 2s linear 0s normal none infinite spin;
       border: 0; }
     .box-info-product .exclusive::after {
-      background: url("../img/border-1.gif") repeat-y 0 0;
       position: absolute;
       top: 0;
       bottom: 0;
       left: 51px;
       content: '';
-      width: 1px;
-      z-index: 2; }
+      width: 1px; }
       @media (max-width: 991px) {
         .box-info-product .exclusive::after {
           display: none; } }
