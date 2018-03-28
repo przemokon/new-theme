@@ -17,7 +17,7 @@
     content: '\f006';
     font-family: "Font Awesome";
     display: inline-block;
-    color: #777676; }
+    color: #777; }
   #product_comments_block_extra div.star_on::after {
     content: '\f005';
     font-family: "Font Awesome";
@@ -48,7 +48,7 @@
         float: none;
         line-height: 20px; } }
     .comments_advices a::before {
-      background: #929292;
+      background: #808080;
       color: #fff;
       display: inline-block;
       font-family: "Font Awesome";
@@ -122,7 +122,7 @@
         color: #000; }
   #new_comment_form .new_comment_form_content {
     padding: 15px 25px 15px 15px;
-    background: #f8f8f8; }
+    background: #fafafa; }
     @media (max-width: 767px) {
       #new_comment_form .new_comment_form_content {
         padding-left: 25px; } }
@@ -140,7 +140,7 @@
     padding: 0 5px;
     height: 28px;
     width: 100%;
-    border: 1px solid #ccc;
+    border: 1px solid #cbcaca;
     background: #fff; }
   #new_comment_form textarea {
     height: 80px; }
@@ -150,7 +150,7 @@
     font-size: 13px;
     text-align: right; }
   #new_comment_form #criterions_list {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #cbcaca;
     padding-bottom: 15px;
     list-style-type: none; }
     #new_comment_form #criterions_list li {
@@ -204,7 +204,7 @@
     content: '\f006';
     font-family: "Font Awesome";
     display: inline-block;
-    color: #777676; }
+    color: #777; }
   #product_comments_block_tab div.star_on::after {
     content: '\f005';
     font-family: "Font Awesome";
@@ -217,7 +217,7 @@
       display: block;
       color: #333; }
     #product_comments_block_tab .comment_author_infos em {
-      color: #adadad; }
+      color: #b0afaf; }
   #product_comments_block_tab a {
     text-decoration: none;
     font-weight: bold; }

@@ -14,7 +14,7 @@
     content: '\f08a';
     font: 400 15px/31px $font-icon;
     color: $light-text-color;
-    background: #929292;
+    background: $gray;
     width: 30px;
     text-align: center;
     display: inline-block;
@@ -93,7 +93,7 @@
   .ajax_cart_block_remove_link {
     font-size: 14px;
     line-height: 14px;
-    color: #d3d2d2;
+    color: $alto;
     width: 14px;
     height: 14px;
     float: right;
@@ -246,7 +246,7 @@ ul.product_list.grid > li .product-container .functional-buttons .wishlist .popo
     margin-bottom: 2px;
 
     td:hover {
-      background-color: rgb(204, 204, 204);
+      background-color: $silver;
       cursor: pointer;
     }
    }
@@ -265,7 +265,7 @@ ul.product_list.grid > li .product-container .functional-buttons .wishlist .popo
     margin-bottom: 2px;
 
     td:hover {
-      background-color: rgb(204, 204, 204);
+      background-color: $silver;
       cursor: pointer;
     }
   }

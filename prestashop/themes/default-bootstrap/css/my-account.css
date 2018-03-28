@@ -9,12 +9,12 @@
     overflow: hidden;
     font: 600 16px/20px "Open Sans", sans-serif;
     color: #555454;
-    text-shadow: 0 1px white;
+    text-shadow: 0 1px #fff;
     text-transform: uppercase;
     text-decoration: none;
     position: relative;
     border: 1px solid;
-    border-color: #cacaca #b7b7b7 #9a9a9a; }
+    border-color: #cbcaca #b7b7b7 #9a9a9a; }
     #my-account ul.myaccount-link-list li a i {
       font-size: 25px;
       color: #fd7e01;
@@ -32,10 +32,10 @@
       overflow: hidden;
       border: 1px solid;
       margin-left: 52px;
-      border-color: #fff #fff #fff #c8c8c8; }
+      border-color: #fff #fff #fff #cbcaca; }
     #my-account ul.myaccount-link-list li a:hover {
       filter: none;
       background: #e7e7e7;
-      border-color: #9e9e9e #c2c2c2 #c8c8c8; }
+      border-color: #b0afaf #cbcaca #cbcaca; }
 
 /*# sourceMappingURL=my-account.css.map */

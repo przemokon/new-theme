@@ -67,14 +67,14 @@ a.fancybox-nav {
         padding: 10px 0;
         text-align: center;
         line-height: 22px;
-        color: #777676;
+        color: $boulder;
         width: 136px;
         font-weight: 700;
-        background: rgba(255, 255, 255, .5);
+        background: lighten($white, 50%);
 
         &::after {
           font-family: $font-icon;
-          color: #c0c0c0;
+          color: $silver;
           font-size: 20px;
           line-height: 22px;
           content: '\f00e';
@@ -308,7 +308,7 @@ span.view_scroll_spacer {
     }
 
     a {
-      color: #777676;
+      color: $boulder;
       font-weight: 700;
       position: relative;
       padding-left: 30px;
@@ -327,7 +327,7 @@ span.view_scroll_spacer {
       }
 
       &:hover {
-        color: #000;
+        color: $black;
       }
     }
 
@@ -389,7 +389,7 @@ span.view_scroll_spacer {
       }
 
       &:hover {
-        color: #000;
+        color: $black;
       }
     }
 
@@ -474,7 +474,7 @@ span.view_scroll_spacer {
   &::before {
     content: '\f024';
     font-family: $font-icon;
-    color: #cfcccc;
+    color: $silver;
     font-size: 26px;
     line-height: 28px;
     position: absolute;
@@ -563,7 +563,7 @@ span.view_scroll_spacer {
         }
 
         &.selected {
-          border: 1px solid #4d4d4d;
+          border: 1px solid $tundora;
         }
       }
     }
@@ -583,7 +583,7 @@ span.view_scroll_spacer {
 .page-product-box .rte {
 
   a {
-    color: #333;
+    color: $mine-shaft;
     text-decoration: underline;
   }
 
@@ -594,9 +594,9 @@ span.view_scroll_spacer {
 
 .box-info-product {
   background: $list-info-bg;
-  border: 1px solid #d2d0d0;
-  border-top: 1px solid #b0afaf;
-  border-bottom: 1px solid #b0afaf;
+  border: 1px solid $alto;
+  border-top: 1px solid $silver-chalice;
+  border-bottom: 1px solid $silver-chalice;
 
   p {
     margin-bottom: 7px;
@@ -604,10 +604,10 @@ span.view_scroll_spacer {
 
   .exclusive {
     padding: 0;
-    border-top: 1px solid #0079b6;
-    border-right: 1px solid #006fa8;
-    border-left: 1px solid #006fa8;
-    border-bottom: 1px solid #012740;
+    border-top: 1px solid $deep-cerulean;
+    border-right: 1px solid $allports;
+    border-left: 1px solid $allports;
+    border-bottom: 1px solid $daintree;
     position: relative;
     display: block;
 
@@ -620,12 +620,12 @@ span.view_scroll_spacer {
       color: $light-text-color;
       font-size: 25px;
       line-height: 47px;
-      text-shadow: 0 1px #015883;
+      text-shadow: 0 1px $orient;
       content: '\f07a';
       z-index: 2;
       width: 51px;
       text-align: center;
-      border: 1px solid #06b2e6;
+      border: 1px solid $cerulean;
       @media (max-width: $screen-sm-max) { //max 991px
         display: none;
       }
@@ -667,11 +667,8 @@ span.view_scroll_spacer {
       font-weight: 700;
       font-size: 20px;
       line-height: 22px;
-      border-top: 1px solid #06b2e6;
-      border-right: 1px solid #06b2e6;
-      border-left: 1px solid #06b2e6;
-      border-bottom: 1px solid #06b2e6;
-      text-shadow: 0 1px #015883;
+      border: 1px solid $cerulean;
+      text-shadow: 0 1px $orient;
       padding: 12px 36px 14px 60px;
       color: $light-text-color;
       display: block !important;
@@ -693,16 +690,16 @@ span.view_scroll_spacer {
 
     .box-info-product {
       background: $list-info-bg;
-      border: 1px solid #d2d0d0;
-      border-top: 1px solid #b0afaf;
-      border-bottom: 1px solid #b0afaf;
+      border: 1px solid $alto;
+      border-top: 1px solid $silver-chalice;
+      border-bottom: 1px solid $silver-chalice;
 
       .exclusive {
         padding: 0;
-        border-top: 1px solid #0079b6;
-        border-right: 1px solid #006fa8;
-        border-left: 1px solid #006fa8;
-        border-bottom: 1px solid #012740;
+        border-top: 1px solid $deep-cerulean;
+        border-right: 1px solid $allports;
+        border-left: 1px solid $allports;
+        border-bottom: 1px solid $daintree;
         position: relative;
         display: block;
 
@@ -715,7 +712,7 @@ span.view_scroll_spacer {
           color: $light-text-color;
           font-size: 25px;
           line-height: 47px;
-          text-shadow: 0 1px #015883;
+          text-shadow: 0 1px $orient;
           content: '\f07a';
           z-index: 2;
           width: 51px;
@@ -762,8 +759,8 @@ span.view_scroll_spacer {
           font-size: 18px;
           line-height: 22px;
           border: 0;
-          border-top: 1px solid #006fa8;
-          text-shadow: 0 1px #015883;
+          border-top: 1px solid $allports;
+          text-shadow: 0 1px $orient;
           padding: 12px 16px 14px;
           color: $light-text-color;
           display: block !important;
@@ -941,8 +938,8 @@ table.table-product-discounts {
 }
 
 #last_quantities {
-  background: #fe9126;
-  border: 1px solid #e4752b;
+  background: $sunshade;
+  border: 1px solid $zest;
   padding: 4px 8px 3px;
   position: relative;
   top: 1px;
@@ -961,7 +958,7 @@ table.table-product-discounts {
 
 // box-security
 .box-security {
-  border-top: 1px solid #dfdede;
+  border-top: 1px solid $alto;
   padding: 19px 19px 6px;
 }
 
@@ -1015,8 +1012,8 @@ table.table-product-discounts {
   font-size: 21px;
   line-height: 23px;
   color: $light-text-color;
-  background: #f13340;
-  border: 1px solid #d02a2c;
+  background: $pomegranate;
+  border: 1px solid $persian-red;
 
   span {
     display: block;
@@ -1031,7 +1028,7 @@ table.table-product-discounts {
 .pb-center-column p.online_only {
   font-weight: 700;
   font-size: 13px;
-  color: #f13340;
+  color: $pomegranate;
   text-align: left;
 }
 
@@ -1065,7 +1062,7 @@ table.table-product-discounts {
 
       .product_name {
         font-size: 12px;
-        color: #000;
+        color: $black;
       }
     }
   }
@@ -1086,7 +1083,7 @@ table.table-product-discounts {
 
       &.txt_required {
         padding-bottom: 0;
-        color: #666;
+        color: $dove-gray;
       }
     }
 
@@ -1106,7 +1103,7 @@ table.table-product-discounts {
         width: 100%;
         border: 1px solid $base-border-color;
         font-size: 12px;
-        color: #666;
+        color: $dove-gray;
       }
     }
   }
@@ -1357,7 +1354,7 @@ ul#text_fields {
       #view_full_size {
 
         .span_link {
-          background: #fff;
+          background: $white;
           border: 1px solid $base-border-color;
         }
       }

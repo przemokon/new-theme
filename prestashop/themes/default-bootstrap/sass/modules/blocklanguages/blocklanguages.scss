@@ -2,7 +2,7 @@
 
 #languages-block-top {
   float: right;
-  border-left: 1px solid #515151;
+  border-left: 1px solid $emperor;
   position: relative;
   // max 479px
   @media (max-width: $screen-xs - 1) {
@@ -18,7 +18,7 @@
     padding: 8px 10px 10px;
     line-height: 18px;
     color: $light-text-color;
-    text-shadow: 1px 1px rgba(0, 0, 0, .2);
+    text-shadow: 1px 1px lighten($black, 80%);
     cursor: pointer;
     @media (max-width: $screen-xs - 1) {
       text-align: center;
@@ -27,7 +27,7 @@
     }
 
     strong {
-      color: #777;
+      color: $boulder;
     }
 
     &::after {
@@ -35,7 +35,7 @@
       font-family: $font-icon;
       font-size: 18px;
       line-height: 18px;
-      color: #686666;
+      color: $dove-gray;
       vertical-align: -2px;
       padding-left: 12px;
       // max 479px
@@ -78,7 +78,7 @@
 
       &.selected,
       &:hover a {
-        background: #484848;
+        background: $tundora;
       }
     }
   }

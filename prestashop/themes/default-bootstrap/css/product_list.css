@@ -39,7 +39,7 @@ ul.product_list .product-image-container {
         ul.product_list .product-image-container .quick-view-wrapper-mobile .quick-view-mobile {
           display: block;
           position: relative;
-          background-color: rgba(208, 208, 211, 0.57);
+          background-color: white;
           height: 130px;
           width: 85px;
           top: 80px;
@@ -57,7 +57,7 @@ ul.product_list .product-image-container {
             transform: rotate(315deg); } }
     @media (max-width: 1199px) {
       ul.product_list .product-image-container .quick-view-wrapper-mobile .quick-view-mobile:hover {
-        background-color: rgba(167, 167, 167, 0.57); } }
+        background-color: white; } }
     @media (max-width: 1199px) {
       ul.product_list .product-image-container .quick-view-wrapper-mobile {
         display: block;
@@ -77,7 +77,7 @@ ul.product_list .product-image-container {
     top: 50%;
     margin: -21px 0 0 -53px;
     padding: 13px 0 0;
-    background: rgba(255, 255, 255, 0.82);
+    background: white;
     width: 107px;
     height: 43px;
     text-align: center; }

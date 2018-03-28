@@ -37,7 +37,7 @@
 
   #thumbs_list li a:hover,
   #thumbs_list li a.shown {
-    border-color: #fff;
+    border-color: $white;
   }
 
   .pb-left-column #views_block {
@@ -106,7 +106,7 @@
           display: block;
           width: 100%;
           border-left: 0;
-          border-top: 1px solid #515151;
+          border-top: 1px solid $emperor;
           padding-top: 20px;
         }
       }

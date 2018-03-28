@@ -1,6 +1,6 @@
 #languages-block-top {
   float: right;
-  border-left: 1px solid #515151;
+  border-left: 1px solid #555454;
   position: relative; }
   @media (max-width: 479px) {
     #languages-block-top {
@@ -12,7 +12,7 @@
     padding: 8px 10px 10px;
     line-height: 18px;
     color: #fff;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px #cccccc;
     cursor: pointer; }
     @media (max-width: 479px) {
       #languages-block-top div.current {
@@ -26,7 +26,7 @@
       font-family: "Font Awesome";
       font-size: 18px;
       line-height: 18px;
-      color: #686666;
+      color: #666;
       vertical-align: -2px;
       padding-left: 12px; }
       @media (max-width: 479px) {
@@ -57,6 +57,6 @@
         color: #fff; }
       #languages-block-top ul li.selected,
       #languages-block-top ul li:hover a {
-        background: #484848; }
+        background: #464646; }
 
 /*# sourceMappingURL=blocklanguages.css.map */

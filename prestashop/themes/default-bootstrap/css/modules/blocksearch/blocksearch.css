@@ -24,7 +24,7 @@
       width: 100%;
       text-align: center; }
     #search_block_top .btn.button-search:hover {
-      color: #6f6f6f; }
+      color: #666; }
   #search_block_top #search_query_top {
     display: inline;
     padding: 13px 60px 13px 13px;
@@ -40,7 +40,7 @@
   .ac_results li {
     padding: 0 10px;
     font-weight: normal;
-    color: #686666;
+    color: #666;
     font-size: 13px;
     line-height: 22px; }
     .ac_results li.ac_odd {

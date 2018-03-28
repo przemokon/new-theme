@@ -27,7 +27,7 @@
       content: '\f006';
       font-family: $font-icon;
       display: inline-block;
-      color: #777676;
+      color: $boulder;
     }
   }
 
@@ -36,7 +36,7 @@
       content: '\f005';
       font-family: $font-icon;
       display: inline-block;
-      color: #ef8743;
+      color: $jaffa;
     }
   }
 
@@ -71,8 +71,8 @@
     }
 
     &::before {
-      background: #929292;
-      color: #fff;
+      background: $gray;
+      color: $white;
       display: inline-block;
       font-family: $font-icon;
       font-size: 15px;
@@ -175,14 +175,14 @@
       .product_name {
         padding: 10px 0 5px;
         font-size: 13px;
-        color: #000;
+        color: $black;
       }
     }
   }
 
   .new_comment_form_content {
     padding: 15px 25px 15px 15px;
-    background: #f8f8f8;
+    background: $alabaster;
     @media (max-width: $screen-xs-max) { //max 767px
       padding-left: 25px;
     }
@@ -206,7 +206,7 @@
     padding: 0 5px;
     height: 28px;
     width: 100%;
-    border: 1px solid #ccc;
+    border: 1px solid $silver;
     background: $light-background;
   }
 
@@ -222,7 +222,7 @@
   }
 
   #criterions_list {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid $silver;
     padding-bottom: 15px;
     list-style-type: none;
 
@@ -307,7 +307,7 @@
       content: '\f006';
       font-family: $font-icon;
       display: inline-block;
-      color: #777676;
+      color: $boulder;
     }
   }
 
@@ -316,7 +316,7 @@
       content: '\f005';
       font-family: $font-icon;
       display: inline-block;
-      color: #ef8743;
+      color: $jaffa;
     }
   }
 
@@ -330,7 +330,7 @@
     }
 
     em {
-      color: #adadad;
+      color: $silver-chalice;
     }
   }
 

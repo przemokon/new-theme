@@ -40,8 +40,8 @@
   #footer #newsletter_block_left .form-group .form-control {
     height: 45px;
     max-width: 267px;
-    background: #3c3c3c;
-    border-color: #515151;
+    background: #333;
+    border-color: #555454;
     color: #fff;
     padding: 10px 43px 10px 12px;
     display: inline-block;
@@ -51,7 +51,7 @@
     border: 0;
     background: none;
     text-align: center;
-    color: #908f8f;
+    color: #808080;
     padding: 8px; }
     #footer #newsletter_block_left .form-group .button-small::before {
       content: '\f138';

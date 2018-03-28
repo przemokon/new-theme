@@ -87,7 +87,7 @@
 
     span.grower {
       display: block;
-      background: #f6f6f6;
+      background: $wild-sand;
       position: absolute;
       right: 0;
       top: 0;
@@ -112,21 +112,21 @@
 
       &.CLOSE::before {
         content: '\f067';
-        color: #c0c0c0;
+        color: $silver;
       }
     }
 
     & span.grower:hover + a,
     a:hover,
     a.selected {
-      background: #f6f6f6;
+      background: $wild-sand;
     }
 
     li {
 
       a {
         font-weight: normal;
-        color: #777;
+        color: $boulder;
 
         &::before {
           content: '\f105';

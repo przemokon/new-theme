@@ -41,7 +41,7 @@
 
     h2 {
       font-size: 2.7em;
-      color: #fff;
+      color: $white;
       margin: 0;
       padding: 0;
     }
@@ -51,7 +51,7 @@
       font-size: 1.15em;
       line-height: 1.3em;
       padding: .5em 0;
-      color: #fff;
+      color: $white;
     }
 
     button {
@@ -96,7 +96,7 @@
     }
 
     .bx-pager.bx-default-pager a {
-      background: #666;
+      background: $dove-gray;
     }
 
     .bx-controls-direction a {

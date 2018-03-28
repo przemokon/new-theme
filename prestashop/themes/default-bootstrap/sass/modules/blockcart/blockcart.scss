@@ -14,7 +14,7 @@
       display: inline-block;
       float: right;
       font-size: 18px;
-      color: #686666;
+      color: $dove-gray;
       padding: 6px 0 0;
     }
   }
@@ -44,8 +44,8 @@
     background: $dark-background;
     display: block;
     font-weight: bold;
-    color: #777;
-    text-shadow: 1px 1px rgba(0, 0, 0, .2);
+    color: $boulder;
+    text-shadow: 1px 1px lighten($black, 80%);
     overflow: hidden;
 
     span.ajax_cart_product_txt,
@@ -85,7 +85,7 @@
       display: inline-block;
       float: right;
       font-size: 18px;
-      color: #686666;
+      color: $dove-gray;
       padding: 6px 0 0;
     }
   }
@@ -153,7 +153,7 @@
 
     .quantity-formated {
       display: inline-block;
-      color: #9c9b9b;
+      color: $dusty-gray;
       text-transform: uppercase;
       font-size: 10px;
       padding-right: 5px;
@@ -201,7 +201,7 @@
 
     .cart-prices-line {
       overflow: hidden;
-      border-bottom: 1px solid #515151;
+      border-bottom: 1px solid $emperor;
       padding: 7px 0;
 
       &.last-line {
@@ -214,7 +214,7 @@
     overflow: hidden;
     padding: 20px 20px 10px;
     margin: 0;
-    background: #f6f6f6;
+    background: $wild-sand;
 
     a {
       width: 100%;
@@ -230,13 +230,13 @@
         span {
           padding: 7px 0;
           font-size: 1.1em;
-          border: solid 1px lighten(#43b155, 10%);
-          background: #43b155;
+          border: solid 1px lighten($chateau-green, 10%);
+          background: $chateau-green;
         }
 
         &:hover span {
-          border: solid 1px darken(#43b155, 10%);
-          background: darken(#43b155, 15%);
+          border: solid 1px darken($chateau-green, 10%);
+          background: darken($chateau-green, 15%);
           color: $light-text-color;
         }
       }
@@ -254,7 +254,7 @@
     z-index: 100;
     display: none;
     height: auto;
-    background: #484848;
+    background: $tundora;
     color: $light-text-color;
     width: 270px;
     @media (max-width: $screen-xs) {
@@ -268,7 +268,7 @@
       color: $light-text-color;
 
       &:hover {
-        color: #9c9b9b;
+        color: $dusty-gray;
       }
     }
 
@@ -281,7 +281,7 @@
         text-decoration: none;
 
         &:hover {
-          color: #9c9b9b;
+          color: $dusty-gray;
         }
       }
     }
@@ -303,7 +303,7 @@
       font-size: 11px;
 
       a {
-        color: #9c9b9b;
+        color: $dusty-gray;
 
         &:hover {
           color: $light-text-color;
@@ -313,7 +313,7 @@
 
     .cart-prices {
       border: 0;
-      background: url('../../../img/cart-shadow.png') repeat-x #3d3d3d;
+      background: url('../../../img/cart-shadow.png') repeat-x $mine-shaft;
     }
 
     .cart-buttons {
@@ -366,7 +366,7 @@
 
 // Layer Cart Css
 .layer_cart_overlay {
-  background-color: #000;
+  background-color: $black;
   display: none;
   height: 100%;
   left: 0;
@@ -400,7 +400,7 @@
     .title {
       display: block;
       font: 400 23px/29px $font-family;
-      color: #46a74e;
+      color: $chateau-green;
       margin-bottom: 22px;
       @media (max-width: $screen-xs-max) { // max 767px
         font-size: 18px;
@@ -452,7 +452,7 @@
   }
 
   .layer_cart_cart {
-    background: #fafafa;
+    background: $alabaster;
     border-left: 1px solid $base-border-color;
     padding: 21px 30px 170px;
     position: relative;
@@ -501,7 +501,7 @@
 
         i {
           padding-right: 5px;
-          color: #777;
+          color: $boulder;
         }
       }
     }
@@ -608,7 +608,7 @@
         }
 
         &:hover {
-          color: #c0c0c0;
+          color: $silver;
         }
 
         &.disabled {

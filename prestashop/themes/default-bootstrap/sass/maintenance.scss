@@ -2,12 +2,12 @@
 
 // Maintenance Page Styles
 #body {
-  background-color: #f7f7f7;
+  background-color: $alabaster;
 }
 
 #maintenance {
   margin: 50px 0 0;
-  background-color: #fff;
+  background-color: $white;
   @media (min-width: $screen-lg) { // > 1200
     margin: 126px 0 0;
     padding: 50px;
@@ -28,7 +28,7 @@
   #message {
     font: 14px $font-custom;
     padding: 0 0 0 18px;
-    color: #555454;
+    color: $emperor;
     text-align: center;
   }
 }

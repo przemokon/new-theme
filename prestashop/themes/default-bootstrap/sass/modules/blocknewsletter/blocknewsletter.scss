@@ -25,11 +25,11 @@
   }
 
   .success_inline {
-    color: #418b19;
+    color: $la-palma;
   }
 
   .warning_inline {
-    color: #f13340;
+    color: $pomegranate;
   }
 }
 
@@ -62,8 +62,8 @@
       .form-control {
         height: 45px;
         max-width: 267px;
-        background: #3c3c3c;
-        border-color: #515151;
+        background: $mine-shaft;
+        border-color: $emperor;
         color: $light-text-color;
         padding: 10px 43px 10px 12px;
         display: inline-block;
@@ -75,7 +75,7 @@
         border: 0;
         background: none;
         text-align: center;
-        color: #908f8f;
+        color: $gray;
         padding: 8px;
 
         &::before {
@@ -97,7 +97,7 @@
 
     .warning_inline {
       display: block;
-      color: #f13340;
+      color: $pomegranate;
       font-size: 13px;
       line-height: 26px;
       clear: both;

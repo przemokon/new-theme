@@ -11,7 +11,7 @@
     content: '\f08a';
     font: 400 15px/31px "Font Awesome";
     color: #fff;
-    background: #929292;
+    background: #808080;
     width: 30px;
     text-align: center;
     display: inline-block;
@@ -58,7 +58,7 @@
 #wishlist_block .ajax_cart_block_remove_link {
   font-size: 14px;
   line-height: 14px;
-  color: #d3d2d2;
+  color: #d7d7d7;
   width: 14px;
   height: 14px;
   float: right; }
@@ -153,7 +153,7 @@ ul.product_list.grid > li .product-container .functional-buttons .wishlist .popo
   ul.product_list.grid > li .product-container .functional-buttons .wishlist .popover table {
     margin-bottom: 2px; }
     ul.product_list.grid > li .product-container .functional-buttons .wishlist .popover table td:hover {
-      background-color: #cccccc;
+      background-color: #cbcaca;
       cursor: pointer; }
 
 [id='wishlist_button'] + .popover,
@@ -168,7 +168,7 @@ ul.product_list.grid > li .product-container .functional-buttons .wishlist .popo
     margin-bottom: 2px; }
     [id='wishlist_button'] + .popover table td:hover,
     .wishlist_change_button + .popover table td:hover {
-      background-color: #cccccc;
+      background-color: #cbcaca;
       cursor: pointer; }
 
 /*# sourceMappingURL=blockwishlist.css.map */

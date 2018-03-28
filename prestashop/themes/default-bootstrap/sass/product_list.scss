@@ -62,7 +62,7 @@ ul.product_list {
         @media (max-width: $screen-md-max) {
           display: block;
           position: relative;
-          background-color: rgba(208, 208, 211, .57);
+          background-color: lighten($iron, 40%);
           height: 130px;
           width: 85px;
           top: 80px;
@@ -87,7 +87,7 @@ ul.product_list {
 
       .quick-view-mobile:hover {
         @media (max-width: $screen-md-max) {
-          background-color: rgba(167, 167, 167, .57);
+          background-color: lighten($silver-chalice, 40%);
         }
       }
       @media (max-width: $screen-md-max) {
@@ -111,7 +111,7 @@ ul.product_list {
       top: 50%;
       margin: -21px 0 0 -53px;
       padding: 13px 0 0;
-      background: rgba(255, 255, 255, .82);
+      background: lighten($white, 20%);
       width: 107px;
       height: 43px;
       text-align: center;
@@ -442,7 +442,7 @@ ul.product_list.list {
       margin: -5px 0 10px;
 
       .discount {
-        color: $pomegrante;
+        color: $pomegranate;
       }
     }
 
