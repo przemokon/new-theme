@@ -35,7 +35,7 @@ table#product_comparison {
         > span {
           font: 600 18px/22px $font-custom;
           text-transform: uppercase;
-          color: #555454;
+          color: $emperor;
         }
       }
     }
@@ -48,7 +48,7 @@ table#product_comparison {
     a {
       font-size: 23px;
       line-height: 23px;
-      color: #c0c0c0;
+      color: $silver;
 
       &:hover {
         color: $link-hover-color;
@@ -84,7 +84,7 @@ table#product_comparison {
   .comparison_availability_statut {
     display: none;
     font-weight: 700;
-    color: #060;
+    color: $silver;
   }
 
   .product_discount {

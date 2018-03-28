@@ -6872,7 +6872,7 @@ label {
       font-size: 26px;
       line-height: 26px;
       vertical-align: -3px;
-      color: #c0c0c0; }
+      color: #cbcaca; }
 
 .btn.button-plus,
 .btn.button-minus {
@@ -6882,7 +6882,7 @@ label {
   text-shadow: 1px -1px rgba(0, 0, 0, 0.05);
   padding: 0;
   border: 1px solid;
-  border-color: #dedcdc #c1bfbf #b5b4b4 #dad8d8; }
+  border-color: #d7d7d7 #cbcaca #b7b7b7 #d7d7d7; }
   .btn.button-plus span,
   .btn.button-minus span {
     background-image: -webkit-linear-gradient(top, white 0%, #fbfbfb 100%);
@@ -6909,7 +6909,7 @@ label {
 .button.ajax_add_to_cart_button {
   font: 700 17px/21px Arial, Helvetica, sans-serif;
   color: #fff;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px #cccccc;
   padding: 0;
   border: 1px solid;
   border-color: #0079b6 #006fa8 #012740; }
@@ -6920,7 +6920,7 @@ label {
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF009AD0', endColorstr='#FF007AB7', GradientType=0);
     border: 1px solid;
-    border-color: #06b2e6;
+    border-color: #009ad0;
     padding: 10px 14px;
     display: block;
     background: #009ad0; }
@@ -6936,7 +6936,7 @@ label {
   text-shadow: 1px 1px white;
   padding: 0;
   border: 1px solid;
-  border-color: #cacaca #b7b7b7 #9a9a9a; }
+  border-color: #cbcaca #b7b7b7 #9a9a9a; }
   .button.lnk_view span {
     background-image: -webkit-linear-gradient(top, #f7f7f7 0%, #ededed 100%);
     background-image: -o-linear-gradient(top, #f7f7f7 0%, #ededed 100%);
@@ -6949,7 +6949,7 @@ label {
     display: block;
     background: #f7f7f7; }
   .button.lnk_view:hover {
-    border-color: #9e9e9e #9e9e9e #c8c8c8; }
+    border-color: #b0afaf #b0afaf #cbcaca; }
     .button.lnk_view:hover span {
       filter: none;
       background: #e7e7e7; }
@@ -6961,7 +6961,7 @@ table.std,
 table.table_block {
   margin-bottom: 20px;
   width: 100%;
-  border: 1px solid #999;
+  border: 1px solid #9a9a9a;
   border-bottom: 0;
   background: #fff;
   border-collapse: inherit; }
@@ -6974,7 +6974,7 @@ table.table_block th {
   font-weight: bold;
   text-transform: uppercase;
   text-shadow: 0 1px 0 #000;
-  background: #999; }
+  background: #9a9a9a; }
 
 table.std tr.alternate_item,
 table.table_block tr.alternate_item {
@@ -6983,8 +6983,8 @@ table.table_block tr.alternate_item {
 table.std td,
 table.table_block td {
   padding: 12px;
-  border-right: 1px solid #e9e9e9;
-  border-bottom: 1px solid #e9e9e9;
+  border-right: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
   font-size: 12px;
   vertical-align: top; }
 
@@ -7429,7 +7429,7 @@ table.table_block td {
         display: block;
         padding-top: 5px; } }
   .page-heading span.lighter {
-    color: #9c9c9c; }
+    color: #9a9a9a; }
   .page-heading.bottom-indent {
     margin-bottom: 16px; }
   .page-heading.product-listing {
@@ -7598,7 +7598,7 @@ ul.footer_links {
         padding: 0;
         font-weight: bold;
         border: 1px solid;
-        border-color: #dfdede #d2d0d0 #b0afaf;
+        border-color: #d7d7d7 #d7d7d7 #b0afaf;
         display: block; }
         .top-pagination-content ul.pagination li > a span,
         .top-pagination-content ul.pagination li > span span,
@@ -7663,7 +7663,7 @@ ul.footer_links {
       .top-pagination-content ul.pagination li.active > span,
       .bottom-pagination-content ul.pagination li.active > span {
         color: #333;
-        border-color: #dfdede #d2d0d0 #b0afaf; }
+        border-color: #d7d7d7 #d7d7d7 #b0afaf; }
         .top-pagination-content ul.pagination li.active > span span,
         .bottom-pagination-content ul.pagination li.active > span span {
           background: #f6f6f6; }
@@ -7698,7 +7698,7 @@ ul.step {
     width: 20%;
     text-align: left;
     border: 1px solid;
-    border-top-color: #cacaca;
+    border-top-color: #cbcaca;
     border-bottom-color: #9a9a9a;
     border-right-color: #b7b7b7;
     border-left-width: 0; }
@@ -7771,12 +7771,12 @@ ul.step {
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF42B856', endColorstr='#FF43AB54', GradientType=0);
       font-weight: bold;
       background: #42b856;
-      border-color: #399b49 #51ae5c #208931 #369946; }
+      border-color: #46a74e #51ae5c #208931 #369946; }
       ul.step li.step_current span {
         color: #fff;
         text-shadow: 1px 1px #208931;
         border: 1px solid;
-        border-color: #73ca77 #74c776 #74c175;
+        border-color: #73ca77 #73ca77 #74c175;
         position: relative; }
         @media (min-width: 992px) {
           ul.step li.step_current span {
@@ -7809,13 +7809,13 @@ ul.step {
       background-image: linear-gradient(to bottom, #727171 0%, #666666 100%);
       background-repeat: repeat-x;
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF727171', endColorstr='#FF666666', GradientType=0);
-      border-color: #666 #5f5f5f #292929;
+      border-color: #666 #5f5f5f #333;
       background: #727171; }
       ul.step li.step_done a {
         color: #fff;
         text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
         border: 1px solid;
-        border-color: #8b8a8a; }
+        border-color: #808080; }
         @media (min-width: 992px) {
           ul.step li.step_done a {
             padding-left: 38px; }
@@ -7882,7 +7882,7 @@ div.star a:hover {
   padding: 10px;
   border: 1px solid #e6db55;
   font-size: 13px;
-  background: none repeat scroll 0 0 #ffffe0; }
+  background: none repeat scroll 0 0 #fff; }
 
 #page .rte {
   background: transparent none repeat scroll 0 0; }
@@ -8036,7 +8036,7 @@ div.star a:hover {
         font-weight: bold;
         text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4); }
     .footer-container #footer #block_contact_infos {
-      border-left: 1px solid #515151; }
+      border-left: 1px solid #555454; }
       @media (max-width: 767px) {
         .footer-container #footer #block_contact_infos {
           border: 0; } }
@@ -8059,7 +8059,7 @@ div.star a:hover {
             text-align: center;
             padding-right: 12px;
             float: left;
-            color: #908f8f; }
+            color: #808080; }
     .footer-container #footer .blockcategories_footer {
       clear: left; }
     .footer-container #footer .bottom-footer {
@@ -8068,7 +8068,7 @@ div.star a:hover {
       left: 0; }
       .footer-container #footer .bottom-footer div {
         padding: 15px 0 0;
-        border-top: 1px solid #515151;
+        border-top: 1px solid #555454;
         width: 100%; }
 
 #reinsurance_block {
@@ -8153,7 +8153,7 @@ a.price_discount_delete {
   color: #333; }
   .cart_delete a.cart_quantity_delete:hover,
   a.price_discount_delete:hover {
-    color: #c0c0c0; }
+    color: #cbcaca; }
 
 #cart_summary thead th {
   padding: 7px 8px 9px; }
@@ -8221,7 +8221,7 @@ a.price_discount_delete {
     top: -9999px;
     left: -9999px; }
   #order-detail-content #cart_summary tr {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #cbcaca;
     padding-bottom: 7px;
     overflow: hidden;
     position: relative; }
@@ -8245,8 +8245,8 @@ a.price_discount_delete {
     #order-detail-content #cart_summary td.cart_quantity {
       width: 33%;
       min-height: 70px;
-      border-left: 1px solid #ccc;
-      border-right: 1px solid #ccc; }
+      border-left: 1px solid #cbcaca;
+      border-right: 1px solid #cbcaca; }
       #order-detail-content #cart_summary td.cart_quantity div {
         display: block; }
       #order-detail-content #cart_summary td.cart_quantity > .form-control {
@@ -8319,12 +8319,12 @@ a.price_discount_delete {
 #HOOK_SHOPPING_CART #loyalty i {
   font-size: 26px;
   line-height: 26px;
-  color: #cfcccc; }
+  color: #cbcaca; }
 
 #order_carrier {
   clear: both;
   margin-top: 20px;
-  border: 1px solid #999;
+  border: 1px solid #9a9a9a;
   background: #fff; }
 
 .order_carrier_logo {
@@ -8338,7 +8338,7 @@ a.price_discount_delete {
   line-height: 29px;
   color: #fff;
   text-transform: uppercase;
-  background: url("../img/bg_table_th.png") repeat-x 0 -10px #999; }
+  background: url("../img/bg_table_th.png") repeat-x 0 -10px #9a9a9a; }
 
 #order_carrier span {
   display: block;
@@ -8350,7 +8350,7 @@ a.price_discount_delete {
 
 table#cart_summary .gift-icon {
   color: #fff;
-  background: #08c;
+  background: #0084bf;
   display: inline;
   line-height: 20px;
   padding: 2px 5px;
@@ -8370,7 +8370,7 @@ table#cart_summary .gift-icon {
   #multishipping_mode_box .description_off a:hover,
   #multishipping_mode_box .description a:hover {
     background: #f3f3f3;
-    border: 1px solid #ccc; }
+    border: 1px solid #cbcaca; }
 
 #multishipping_mode_box.on .description_off {
   display: block; }
@@ -8464,12 +8464,12 @@ table#cart_summary .gift-icon {
     padding-bottom: 15px; }
 
 #carrierTable {
-  border: 1px solid #999;
+  border: 1px solid #9a9a9a;
   border-bottom: 0;
   background: #fff; }
 
 #carrierTable tbody {
-  border-bottom: 1px solid #999; }
+  border-bottom: 1px solid #9a9a9a; }
 
 #carrierTable th {
   padding: 0 15px;
@@ -8478,12 +8478,12 @@ table#cart_summary .gift-icon {
   line-height: 29px;
   color: #fff;
   text-transform: uppercase;
-  background: url("../img/bg_table_th.png") repeat-x 0 -10px #999; }
+  background: url("../img/bg_table_th.png") repeat-x 0 -10px #9a9a9a; }
 
 #carrierTable td {
   padding: 15px;
   font-weight: bold;
-  border-right: 1px solid #e9e9e9; }
+  border-right: 1px solid #e7e7e7; }
 
 #carrierTable td.carrier_price {
   border: 0; }
@@ -8847,7 +8847,7 @@ fieldset.customerprivacy label {
 
 form#sendComment fieldset {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #cbcaca;
   background: #eee; }
 
 form#sendComment h3 {
@@ -8868,13 +8868,13 @@ form#sendComment h3 {
   padding: 0 5px;
   height: 28px;
   width: 498px;
-  border: 1px solid #ccc;
+  border: 1px solid #cbcaca;
   background: url("../img/bg_input.png") repeat-x 0 0 #fff; }
 
 #sendComment p.textarea textarea {
   height: 80px;
   width: 508px;
-  border: 1px solid #ccc; }
+  border: 1px solid #cbcaca; }
 
 #sendComment p.submit {
   padding: 0;
@@ -8933,7 +8933,7 @@ div.star.star_hover::after {
 .form-group.form-error textarea {
   border: 1px solid #f13340;
   color: #f13340;
-  background: url("../img/icon/form-error.png") 98% 5px no-repeat #fff1f2; }
+  background: url("../img/icon/form-error.png") 98% 5px no-repeat #fff; }
 
 .form-group.form-ok input,
 .form-group.form-ok textarea {
@@ -9016,7 +9016,7 @@ div.star.star_hover::after {
 
 #facebook_block .facebook-fanbox {
   background: #fff;
-  border: 1px solid #aaa;
+  border: 1px solid #b0afaf;
   padding-bottom: 10px; }
 
 #cmsinfo_block {
@@ -9169,8 +9169,8 @@ div.star.star_hover::after {
   color: #333 !important; }
 
 .tnc_box {
-  background: #fbfbfb;
-  border: 1px solid #d6d4d4;
+  background: #fafafa;
+  border: 1px solid #d7d7d7;
   padding: 14px 18px 13px;
   margin: 0 0 30px;
   line-height: 23px; }

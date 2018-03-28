@@ -14,7 +14,7 @@
       li {
         padding: 4px 0 6px;
         font-weight: bold;
-        color: #46a74e;
+        color: $chateau-green;
         border-top: 1px solid $base-border-color;
 
         &:first-child {
@@ -38,14 +38,14 @@
 
     .testimonials {
       border: 1px solid;
-      border-color: #dfdede #d2d0d0 #b0afaf;
+      border-color: $alto $alto $silver-chalice;
       margin: 4px 0 13px;
       position: relative;
 
       .inner {
         border: 1px solid $light-border-color;
         padding: 19px 18px 11px;
-        background: rgb(251, 251, 251);
+        background: $alabaster;
 
         span {
           text-indent: -5000px;
@@ -88,8 +88,8 @@
     }
 
     #admin-action-cms {
-      background: none repeat 0 0 #f6f6f6;
-      border: 1px solid #d2d0d0;
+      background: none repeat 0 0 $wild-sand;
+      border: 1px solid $alto;
       padding: 10px;
 
       p {
@@ -111,27 +111,27 @@
 
           &.publish_button {
             color: $button-text-color;
-            text-shadow: 1px 1px rgba(0, 0, 0, .2);
-            border-color: #0079b6 #006fa8 #012740;
-            background: rgb(0, 154, 208);
+            text-shadow: 1px 1px lighten($black, 80%);
+            border-color: $deep-cerulean $allports $daintree;
+            background: $cerulean;
 
             &:hover {
-              border-color: #01314e #004b74 #0079b6;
+              border-color: $prussian-blue $regal-blue $deep-cerulean;
               filter: none;
-              background: #0084bf;
+              background: $lochmara;
             }
           }
 
           &.lnk_view {
             color: $base-text-color;
-            text-shadow: 1px 1px rgba(255, 255, 255, 1);
-            border-color: #cacaca #b7b7b7 #9a9a9a;
-            background: rgb(247, 247, 247);
+            text-shadow: 1px 1px $white;
+            border-color: $silver $nobel $dusty-gray;
+            background: $alabaster;
 
             &:hover {
-              border-color: #9e9e9e #9e9e9e #c8c8c8;
+              border-color: $silver-chalice $silver-chalice $silver;
               filter: none;
-              background: #e7e7e7;
+              background: $mercury;
             }
           }
         }

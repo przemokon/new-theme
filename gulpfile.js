@@ -86,7 +86,7 @@ gulp.task('sass', function() {
 */
 gulp.task('watch', function() {
     gulp.watch(paths.prestashopJsFiles, ['lint']);
-    gulp.watch([paths.psSassFiles, paths.psSassModulesFiles], ['sass']);
+    gulp.watch(paths.prestashopSassFiles, ['sass']);
 });
 
 // Default Task

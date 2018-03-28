@@ -50,7 +50,7 @@ header {
   padding-bottom: 15px;
 
   .banner {
-    background: #000;
+    background: $black;
     max-height: 100%;
 
     .row {
@@ -170,7 +170,7 @@ label {
 
     &::before {
       content: '*';
-      color: #ff0;
+      color: $red;
       font-size: 14px;
       position: relative;
       line-height: 12px;
@@ -209,7 +209,7 @@ label {
       font-size: 26px;
       line-height: 26px;
       vertical-align: -3px;
-      color: #c0c0c0;
+      color: $silver;
     }
   }
 }
@@ -222,7 +222,7 @@ label {
   text-shadow: 1px -1px rgba(0, 0, 0, .05);
   padding: 0;
   border: 1px solid;
-  border-color: #dedcdc #c1bfbf #b5b4b4 #dad8d8;
+  border-color: $alto $silver $nobel $alto;
 
   span {
     @include gradient-vertical(rgba(255, 255, 255, 1), rgba(251, 251, 251, 1));
@@ -241,7 +241,7 @@ label {
 
     span {
       filter: none;
-      background: #f6f6f6;
+      background: $wild-sand;
     }
   }
 }
@@ -249,26 +249,26 @@ label {
 .button.ajax_add_to_cart_button {
   font: 700 17px / 21px $font-family;
   color: $button-text-color;
-  text-shadow: 1px 1px rgba(0, 0, 0, .2);
+  text-shadow: 1px 1px lighten($black, 80%);
   padding: 0;
   border: 1px solid;
-  border-color: #0079b6 #006fa8 #012740;
+  border-color: $deep-cerulean $allports $daintree;
 
   span {
     @include gradient-vertical(rgba(0, 154, 208, 1), rgba(0, 122, 183, 1));
     border: 1px solid;
-    border-color: #06b2e6;
+    border-color: $cerulean;
     padding: 10px 14px;
     display: block;
     background: rgb(0, 154, 208);
   }
 
   &:hover {
-    border-color: #01314e #004b74 #0079b6;
+    border-color: $prussian-blue $regal-blue $deep-cerulean;
 
     span {
       filter: none;
-      background: #0084bf;
+      background: $lochmara;
     }
   }
 }
@@ -279,7 +279,7 @@ label {
   text-shadow: 1px 1px rgba(255, 255, 255, 1);
   padding: 0;
   border: 1px solid;
-  border-color: #cacaca #b7b7b7 #9a9a9a;
+  border-color: $silver $nobel $dusty-gray;
 
   span {
     @include gradient-vertical(rgba(247, 247, 247, 1), rgba(237, 237, 237, 1));
@@ -291,11 +291,11 @@ label {
   }
 
   &:hover {
-    border-color: #9e9e9e #9e9e9e #c8c8c8;
+    border-color: $silver-chalice $silver-chalice $silver;
 
     span {
       filter: none;
-      background: #e7e7e7;
+      background: $mercury;
     }
   }
 
@@ -310,9 +310,9 @@ table.std,
 table.table_block {
   margin-bottom: 20px;
   width: 100%;
-  border: 1px solid #999;
+  border: 1px solid $dusty-gray;
   border-bottom: 0;
-  background: #fff;
+  background: $white;
   border-collapse: inherit;
 }
 
@@ -323,20 +323,20 @@ table.table_block th {
   color: $light-text-color;
   font-weight: bold;
   text-transform: uppercase;
-  text-shadow: 0 1px 0 #000;
-  background: #999;
+  text-shadow: 0 1px 0 $black;
+  background: $dusty-gray;
 }
 
 table.std tr.alternate_item,
 table.table_block tr.alternate_item {
-  background-color: #f3f3f3;
+  background-color: $concrete;
 }
 
 table.std td,
 table.table_block td {
   padding: 12px;
-  border-right: 1px solid #e9e9e9;
-  border-bottom: 1px solid #e9e9e9;
+  border-right: 1px solid $mercury;
+  border-bottom: 1px solid $mercury;
   font-size: 12px;
   vertical-align: top;
 }
@@ -459,8 +459,8 @@ table.table_block td {
 }
 
 .price-percent-reduction {
-  background: #f13340;
-  border: 1px solid #d02a2c;
+  background: $pomegranate;
+  border: 1px solid $persian-red;
   font: 600 21px / 24px $font-custom;
   color: $light-text-color;
   padding: 0 5px 0 3px;
@@ -496,7 +496,7 @@ table.table_block td {
   @include rotate(-45deg);
   font: 700 14px / 12px $font-family;
   color: $light-text-color;
-  background: #6ad4ff;
+  background: $malibu;
   text-transform: uppercase;
   padding: 9px 0 7px;
   text-shadow: 1px 1px rgba(0, 0, 0, .24);
@@ -517,7 +517,7 @@ table.table_block td {
     height: 0;
     border-style: solid;
     border-width: 4px 4px 0;
-    border-color: #21a3d8 transparent transparent ;
+    border-color: $curious-blue transparent transparent ;
     content: '.';
     text-indent: -5000px;
   }
@@ -531,7 +531,7 @@ table.table_block td {
     height: 0;
     border-style: solid;
     border-width: 4px 4px 0;
-    border-color: #21a3d8 transparent transparent;
+    border-color: $curious-blue transparent transparent;
     content: '.';
     text-indent: -5000px;
   }
@@ -541,7 +541,7 @@ table.table_block td {
   @include rotate(45deg);
   font: 700 14px / 12px $font-family;
   color: $light-text-color;
-  background: #f13340;
+  background: $pomegranate;
   text-transform: uppercase;
   padding: 9px 0 7px;
   text-shadow: 1px 1px rgba(0, 0, 0, .24);
@@ -562,7 +562,7 @@ table.table_block td {
     height: 0;
     border-style: solid;
     border-width: 4px 4px 0;
-    border-color: #ad2b34 transparent transparent;
+    border-color: $tall-poppy transparent transparent;
     content: '.';
     text-indent: -5000px;
   }
@@ -576,7 +576,7 @@ table.table_block td {
     height: 0;
     border-style: solid;
     border-width: 4px 4px 0;
-    border-color: #ad2b34 transparent transparent;
+    border-color: $tall-poppy transparent transparent;
     content: '.';
     text-indent: -5000px;
   }
@@ -677,7 +677,7 @@ table.table_block td {
 
   .product-image {
     border: $main_border;
-    background: #fff;
+    background: $white;
     padding: 5px;
     display: block;
     margin-bottom: 11px;
@@ -768,7 +768,7 @@ table.table_block td {
   h4 {
     font: 600 18px / 22px $font-custom;
     color: $base-heading-color;
-    background: #f6f6f6;
+    background: $wild-sand;
     border-top: 5px solid $dark-border-color;
     text-transform: uppercase;
     padding: 14px 5px 17px 20px;
@@ -931,7 +931,7 @@ table.table_block td {
   }
 
   span.lighter {
-    color: #9c9c9c;
+    color: $dusty-gray;
   }
 
   &.bottom-indent {
@@ -1151,7 +1151,7 @@ ul.footer_links {
         padding: 0;
         font-weight: bold;
         border: 1px solid;
-        border-color: #dfdede #d2d0d0 #b0afaf;
+        border-color: $alto $alto $silver-chalice;
         display: block;
 
         span {
@@ -1211,7 +1211,7 @@ ul.footer_links {
 
         > span {
           color: $base-text-color;
-          border-color: #dfdede #d2d0d0 #b0afaf;
+          border-color: $alto $alto $silver-chalice;
 
           span {
             background: $pagination-hover-bg;
@@ -1257,9 +1257,9 @@ ul.step {
     width: 20%;
     text-align: left;
     border: 1px solid;
-    border-top-color: #cacaca;
-    border-bottom-color: #9a9a9a;
-    border-right-color: #b7b7b7;
+    border-top-color: $silver;
+    border-bottom-color: $dusty-gray;
+    border-right-color: $nobel;
     border-left-width: 0;
     // max 480px
     @media (max-width: $screen-sm - 1) {
@@ -1308,7 +1308,7 @@ ul.step {
 
     &.first {
       border-left-width: 1px;
-      border-left-color: #b7b7b7;
+      border-left-color: $nobel;
 
       span,
       a {
@@ -1352,13 +1352,13 @@ ul.step {
       @include gradient-vertical(rgba(66, 184, 86, 1), rgba(67, 171, 84, 1));
       font-weight: bold;
       background: rgb(66, 184, 86);
-      border-color: #399b49 #51ae5c #208931 #369946;
+      border-color: $chateau-green $fruit-salad $forest-green $sea-green;
 
       span {
         color: $light-text-color;
         text-shadow: 1px 1px rgba(32, 137, 49, 1);
         border: 1px solid;
-        border-color: #73ca77 #74c776 #74c175;
+        border-color: $mantis $mantis $de-york;
         position: relative;
         //min 991px
         @media (min-width: $screen-md) {
@@ -1398,14 +1398,14 @@ ul.step {
 
     &.step_done {
       @include gradient-vertical(rgba(114, 113, 113, 1), rgba(102, 102, 102, 1));
-      border-color: #666 #5f5f5f #292929;
+      border-color: $dove-gray $scorpion $mine-shaft;
       background: rgb(114, 113, 113);
 
       a {
         color: $light-text-color;
         text-shadow: 1px 1px rgba(0, 0, 0, .3);
         border: 1px solid;
-        border-color: #8b8a8a;
+        border-color: $gray;
         // min 991px
         @media (min-width: $screen-md) {
           padding-left: 38px;
@@ -1504,9 +1504,9 @@ div.star a:hover {
 .confirmation {
   margin: 0 0 10px;
   padding: 10px;
-  border: 1px solid #e6db55;
+  border: 1px solid $confetti;
   font-size: 13px;
-  background: none repeat scroll 0 0 #ffffe0;
+  background: none repeat scroll 0 0 $white;
 }
 
 #page .rte {
@@ -1525,7 +1525,7 @@ div.star a:hover {
 .listcomment li {
   padding: 10px 0;
   border-bottom: 1px dotted $base-border-color;
-  color: #666;
+  color: $dove-gray;
 }
 
 .listcomment .titlecomment {
@@ -1714,7 +1714,7 @@ div.star a:hover {
     }
 
     #block_contact_infos {
-      border-left: 1px solid #515151;
+      border-left: 1px solid $emperor;
       // max 767px
       @media (max-width: $screen-xs-max) {
         border: 0;
@@ -1746,7 +1746,7 @@ div.star a:hover {
               text-align: center;
               padding-right: 12px;
               float: left;
-              color: #908f8f;
+              color: $gray;
             }
           }
         }
@@ -1764,7 +1764,7 @@ div.star a:hover {
 
       div {
         padding: 15px 0 0;
-        border-top: 1px solid #515151;
+        border-top: 1px solid $emperor;
         width: 100%;
       }
     }
@@ -1886,7 +1886,7 @@ a.price_discount_delete {
   color: $base-text-color;
 
   &:hover {
-    color: #c0c0c0;
+    color: $silver;
   }
 }
 
@@ -1970,7 +1970,7 @@ a.price_discount_delete {
 
         span {
           font: 600 18px / 22px $font-custom;
-          color: #555454;
+          color: $emperor;
           text-transform: uppercase;
         }
       }
@@ -2026,7 +2026,7 @@ a.price_discount_delete {
       }
 
       tr {
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid $silver;
         padding-bottom: 7px;
         overflow: hidden;
         position: relative;
@@ -2061,8 +2061,8 @@ a.price_discount_delete {
         &.cart_quantity {
           width: 33%;
           min-height: 70px;
-          border-left: 1px solid #ccc;
-          border-right: 1px solid #ccc;
+          border-left: 1px solid $silver;
+          border-right: 1px solid $silver;
 
           div {
             display: block;
@@ -2206,7 +2206,7 @@ a.price_discount_delete {
     i {
       font-size: 26px;
       line-height: 26px;
-      color: #cfcccc;
+      color: $silver;
     }
   }
 }
@@ -2214,7 +2214,7 @@ a.price_discount_delete {
 #order_carrier {
   clear: both;
   margin-top: 20px;
-  border: 1px solid #999;
+  border: 1px solid $dusty-gray;
   background: $light-background;
 }
 
@@ -2230,7 +2230,7 @@ a.price_discount_delete {
   line-height: 29px;
   color: $light-text-color;
   text-transform: uppercase;
-  background: url('../img/bg_table_th.png') repeat-x 0 -10px #999;
+  background: url('../img/bg_table_th.png') repeat-x 0 -10px $dusty-gray;
 }
 
 #order_carrier span {
@@ -2244,8 +2244,8 @@ a.price_discount_delete {
 }
 
 table#cart_summary .gift-icon {
-  color: #fff;
-  background: #08c;
+  color: $white;
+  background: $lochmara;
   display: inline;
   line-height: 20px;
   padding: 2px 5px;
@@ -2273,8 +2273,8 @@ table#cart_summary .gift-icon {
 
   .description_off a:hover,
   .description a:hover {
-    background: #f3f3f3;
-    border: 1px solid #ccc;
+    background: $concrete;
+    border: 1px solid $silver;
   }
 }
 
@@ -2418,13 +2418,13 @@ table#cart_summary .gift-icon {
 }
 
 #carrierTable {
-  border: 1px solid #999;
+  border: 1px solid $dusty-gray;
   border-bottom: 0;
   background: $light-background;
 }
 
 #carrierTable tbody {
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid $dusty-gray;
 }
 
 #carrierTable th {
@@ -2434,13 +2434,13 @@ table#cart_summary .gift-icon {
   line-height: 29px;
   color: $light-text-color;
   text-transform: uppercase;
-  background: url('../img/bg_table_th.png') repeat-x 0 -10px #999;
+  background: url('../img/bg_table_th.png') repeat-x 0 -10px $dusty-gray;
 }
 
 #carrierTable td {
   padding: 15px;
   font-weight: bold;
-  border-right: 1px solid #e9e9e9;
+  border-right: 1px solid $mercury;
 }
 
 #carrierTable td.carrier_price {
@@ -2513,7 +2513,7 @@ p.payment_module {
     }
 
     &:hover {
-      background-color: #f6f6f6;
+      background-color: $wild-sand;
     }
 
     span {
@@ -2848,11 +2848,11 @@ table.discount {
     vertical-align: -2px;
 
     &.icon-ok {
-      color: #46a74e;
+      color: $chateau-green;
     }
 
     &.icon-remove {
-      color: #f13340;
+      color: $pomegranate;
     }
   }
 }
@@ -2911,7 +2911,7 @@ table.discount {
 
     p {
       font: 600 16px / 20px $font-custom;
-      color: #555454;
+      color: $emperor;
       text-transform: uppercase;
       border-bottom: 1px solid $base-border-color;
       padding-bottom: 19px;
@@ -2990,8 +2990,8 @@ fieldset.customerprivacy label {
 //addons comments products
 form#sendComment fieldset {
   padding: 10px;
-  border: 1px solid #ccc;
-  background: #eee;
+  border: 1px solid $silver;
+  background: $gallery;
 }
 
 form#sendComment h3 {
@@ -3015,14 +3015,14 @@ form#sendComment h3 {
   padding: 0 5px;
   height: 28px;
   width: 498px;
-  border: 1px solid #ccc;
+  border: 1px solid $silver;
   background: url('../img/bg_input.png') repeat-x 0 0 $light-background;
 }
 
 #sendComment p.textarea textarea {
   height: 80px;
   width: 508px;
-  border: 1px solid #ccc;
+  border: 1px solid $silver;
 }
 
 #sendComment p.submit {
@@ -3071,7 +3071,7 @@ div.star.star_on {
     content: '\f005';
     font-family: $font-icon;
     display: inline-block;
-    color: #ef8743;
+    color: $jaffa;
   }
 }
 
@@ -3081,7 +3081,7 @@ div.star.star_hover {
     content: '\f005';
     font-family: $font-icon;
     display: inline-block;
-    color: #ef8743;
+    color: $jaffa;
   }
 }
 
@@ -3107,9 +3107,9 @@ div.star.star_hover {
 
     input,
     textarea {
-      border: 1px solid #f13340;
-      color: #f13340;
-      background: url('../img/icon/form-error.png') 98% 5px no-repeat #fff1f2;
+      border: 1px solid $pomegranate;
+      color: $pomegranate;
+      background: url('../img/icon/form-error.png') 98% 5px no-repeat $white;
     }
   }
 
@@ -3117,9 +3117,9 @@ div.star.star_hover {
 
     input,
     textarea {
-      border: 1px solid #46a74e;
-      color: #35b33f;
-      background: url('../img/icon/form-ok.png') 98% 5px no-repeat #ddf9e1;
+      border: 1px solid $chateau-green;
+      color: $apple;
+      background: url('../img/icon/form-ok.png') 98% 5px no-repeat $blue-romance;
     }
   }
 
@@ -3166,7 +3166,7 @@ div.star.star_hover {
   line-height: 28px;
   color: $base-text-color;
   text-align: center;
-  background: #fff;
+  background: $white;
 
   &:hover {
     color: $link-hover-color;
@@ -3224,7 +3224,7 @@ div.star.star_hover {
 
   .facebook-fanbox {
     background: $light-background;
-    border: 1px solid #aaa;
+    border: 1px solid $silver-chalice;
     padding-bottom: 10px;
   }
 }
@@ -3370,37 +3370,37 @@ div.star.star_hover {
 .btn-pinterest {
 
   &:hover {
-    border-color: #fff;
+    border-color: $white;
   }
 }
 
 .btn-facebook {
 
   i {
-    color: #435f9f;
+    color: $facebook-blue;
   }
 
   &:hover {
-    color: #fff;
-    background-color: #435f9f;
+    color: $white;
+    background-color: $facebook-blue;
 
     i {
-      color: #fff;
+      color: $white;
     }
   }
 }
 
 .btn-twitter {
   i {
-    color: #00aaf0;
+    color: $twitter-blue;
   }
 
   &:hover {
-    color: #fff;
-    background-color: #00aaf0;
+    color: $white;
+    background-color: $twitter-blue;
 
     i {
-      color: #fff;
+      color: $white;
     }
   }
 }
@@ -3408,15 +3408,15 @@ div.star.star_hover {
 .btn-google-plus {
 
   i {
-    color: #e04b34;
+    color: $google-orange;
   }
 
   &:hover {
-    color: #fff;
-    background-color: #e04b34;
+    color: $white;
+    background-color: $google-orange;
 
     i {
-      color: #fff;
+      color: $white;
     }
   }
 }
@@ -3424,15 +3424,15 @@ div.star.star_hover {
 .btn-pinterest {
 
   i {
-    color: #ce1f21;
+    color: $pinterest-red;
   }
 
   &:hover {
-    color: #fff;
-    background-color: #ce1f21;
+    color: $white;
+    background-color: $pinterest-red;
 
     i {
-      color: #fff;
+      color: $white;
     }
   }
 }
@@ -3456,18 +3456,18 @@ div.star.star_hover {
   margin-top: 15px;
 
   i {
-    color: #008000;
+    color: $japanese-laurel;
   }
 }
 
 .payment_option_cta {
   margin-left: 10px;
-  color: #333 !important;
+  color: $mine-shaft !important;
 }
 
 .tnc_box {
-  background: #fbfbfb;
-  border: 1px solid #d6d4d4;
+  background: $alabaster;
+  border: 1px solid $alto;
   padding: 14px 18px 13px;
   margin: 0 0 30px;
   line-height: 23px;

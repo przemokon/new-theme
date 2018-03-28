@@ -27,7 +27,7 @@ table#product_comparison .remove {
   table#product_comparison .remove a {
     font-size: 23px;
     line-height: 23px;
-    color: #c0c0c0; }
+    color: #cbcaca; }
     table#product_comparison .remove a:hover {
       color: #23527c; }
 
@@ -52,7 +52,7 @@ table#product_comparison .prices-container {
 table#product_comparison .comparison_availability_statut {
   display: none;
   font-weight: 700;
-  color: #060; }
+  color: #cbcaca; }
 
 table#product_comparison .product_discount {
   padding-top: 5px; }
