@@ -594,9 +594,9 @@ span.view_scroll_spacer {
 
 .box-info-product {
   background: $list-info-bg;
-  border: 1px solid $alto;
-  border-top: 1px solid $silver-chalice;
-  border-bottom: 1px solid $silver-chalice;
+  border: 1px solid $silver;
+  border-top: 1px solid $nobel;
+  border-bottom: 1px solid $nobel;
 
   p {
     margin-bottom: 7px;
@@ -604,7 +604,7 @@ span.view_scroll_spacer {
 
   .exclusive {
     padding: 0;
-    border-top: 1px solid $deep-cerulean;
+    border-top: 1px solid $allports;
     border-right: 1px solid $allports;
     border-left: 1px solid $allports;
     border-bottom: 1px solid $daintree;
@@ -687,13 +687,13 @@ span.view_scroll_spacer {
 
     .box-info-product {
       background: $list-info-bg;
-      border: 1px solid $alto;
-      border-top: 1px solid $silver-chalice;
-      border-bottom: 1px solid $silver-chalice;
+      border: 1px solid $silver;
+      border-top: 1px solid $nobel;
+      border-bottom: 1px solid $nobel;
 
       .exclusive {
         padding: 0;
-        border-top: 1px solid $deep-cerulean;
+        border-top: 1px solid $allports;
         border-right: 1px solid $allports;
         border-left: 1px solid $allports;
         border-bottom: 1px solid $daintree;
@@ -955,7 +955,7 @@ table.table-product-discounts {
 
 // box-security
 .box-security {
-  border-top: 1px solid $alto;
+  border-top: 1px solid $silver;
   padding: 19px 19px 6px;
 }
 

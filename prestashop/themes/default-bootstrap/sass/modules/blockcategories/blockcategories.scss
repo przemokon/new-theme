@@ -87,7 +87,7 @@
 
     span.grower {
       display: block;
-      background: $wild-sand;
+      background: $gallery;
       position: absolute;
       right: 0;
       top: 0;
@@ -119,7 +119,7 @@
     & span.grower:hover + a,
     a:hover,
     a.selected {
-      background: $wild-sand;
+      background: $gallery;
     }
 
     li {

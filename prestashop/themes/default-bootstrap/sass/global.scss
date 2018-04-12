@@ -237,7 +237,7 @@ label {
   text-shadow: 1px -1px lighten($black, 95%);
   padding: 0;
   border: 1px solid;
-  border-color: $alto $silver $nobel $alto;
+  border-color: $silver $silver $nobel;
 
   span {
     @include gradient-vertical($white, $alabaster);
@@ -256,7 +256,7 @@ label {
 
     span {
       filter: none;
-      background: $wild-sand;
+      background: $gallery;
     }
   }
 }
@@ -267,10 +267,10 @@ label {
   text-shadow: 1px 1px lighten($black, 80%);
   padding: 0;
   border: 1px solid;
-  border-color: $deep-cerulean $allports $daintree;
+  border-color: $allports $allports $daintree;
 
   span {
-    @include gradient-vertical($cerulean, $deep-cerulean);
+    @include gradient-vertical($cerulean, $allports);
     border: 1px solid;
     border-color: $cerulean;
     padding: 10px 14px;
@@ -279,11 +279,11 @@ label {
   }
 
   &:hover {
-    border-color: $prussian-blue $regal-blue $deep-cerulean;
+    border-color: $daintree $orient $allports;
 
     span {
       filter: none;
-      background: $lochmara;
+      background: $allports;
     }
   }
 }
@@ -306,11 +306,11 @@ label {
   }
 
   &:hover {
-    border-color: $silver-chalice $silver-chalice $silver;
+    border-color: $nobel $nobel $silver;
 
     span {
       filter: none;
-      background: $mercury;
+      background: $gallery;
     }
   }
 
@@ -344,14 +344,14 @@ table.table_block th {
 
 table.std tr.alternate_item,
 table.table_block tr.alternate_item {
-  background-color: $concrete;
+  background-color: $gallery;
 }
 
 table.std td,
 table.table_block td {
   padding: 12px;
-  border-right: 1px solid $mercury;
-  border-bottom: 1px solid $mercury;
+  border-right: 1px solid $gallery;
+  border-bottom: 1px solid $gallery;
   font-size: 12px;
   vertical-align: top;
 }
@@ -532,7 +532,7 @@ table.table_block td {
     height: 0;
     border-style: solid;
     border-width: 4px 4px 0;
-    border-color: $curious-blue transparent transparent ;
+    border-color: $cerulean transparent transparent ;
     content: '.';
     text-indent: -5000px;
   }
@@ -546,7 +546,7 @@ table.table_block td {
     height: 0;
     border-style: solid;
     border-width: 4px 4px 0;
-    border-color: $curious-blue transparent transparent;
+    border-color: $cerulean transparent transparent;
     content: '.';
     text-indent: -5000px;
   }
@@ -577,7 +577,7 @@ table.table_block td {
     height: 0;
     border-style: solid;
     border-width: 4px 4px 0;
-    border-color: $tall-poppy transparent transparent;
+    border-color: $persian-red transparent transparent;
     content: '.';
     text-indent: -5000px;
   }
@@ -591,7 +591,7 @@ table.table_block td {
     height: 0;
     border-style: solid;
     border-width: 4px 4px 0;
-    border-color: $tall-poppy transparent transparent;
+    border-color: $persian-red transparent transparent;
     content: '.';
     text-indent: -5000px;
   }
@@ -783,7 +783,7 @@ table.table_block td {
   h4 {
     font: 600 18px / 22px $font-custom;
     color: $base-heading-color;
-    background: $wild-sand;
+    background: $gallery;
     border-top: 5px solid $dark-border-color;
     text-transform: uppercase;
     padding: 14px 5px 17px 20px;
@@ -1166,7 +1166,7 @@ ul.footer_links {
         padding: 0;
         font-weight: bold;
         border: 1px solid;
-        border-color: $alto $alto $silver-chalice;
+        border-color: $silver $silver $nobel;
         display: block;
 
         span {
@@ -1226,7 +1226,7 @@ ul.footer_links {
 
         > span {
           color: $base-text-color;
-          border-color: $alto $alto $silver-chalice;
+          border-color: $silver $silver $nobel;
 
           span {
             background: $pagination-hover-bg;
@@ -1365,14 +1365,14 @@ ul.step {
 
     &.step_current {
       font-weight: bold;
-      background: $chateau-green;
-      border-color: $chateau-green $fruit-salad $forest-green $sea-green;
+      background: $forest-green;
+      border-color: $forest-green;
 
       span {
         color: $light-text-color;
         text-shadow: 1px 1px $forest-green;
         border: 1px solid;
-        border-color: $mantis $mantis $de-york;
+        border-color: $mantis;
         position: relative;
         //min 991px
         @media (min-width: $screen-md) {
@@ -1412,8 +1412,8 @@ ul.step {
 
     &.step_done {
       @include gradient-vertical(rgba(114, 113, 113, 1), rgba(102, 102, 102, 1));
-      border-color: $dove-gray $scorpion $mine-shaft;
-      background: $dove-gray;
+      border-color: $emperor $emperor $mine-shaft;
+      background: $emperor;
 
       a {
         color: $light-text-color;
@@ -1539,7 +1539,7 @@ div.star a:hover {
 .listcomment li {
   padding: 10px 0;
   border-bottom: 1px dotted $base-border-color;
-  color: $dove-gray;
+  color: $emperor;
 }
 
 .listcomment .titlecomment {
@@ -2259,7 +2259,7 @@ a.price_discount_delete {
 
 table#cart_summary .gift-icon {
   color: $white;
-  background: $lochmara;
+  background: $allports;
   display: inline;
   line-height: 20px;
   padding: 2px 5px;
@@ -2287,7 +2287,7 @@ table#cart_summary .gift-icon {
 
   .description_off a:hover,
   .description a:hover {
-    background: $concrete;
+    background: $gallery;
     border: 1px solid $silver;
   }
 }
@@ -2454,7 +2454,7 @@ table#cart_summary .gift-icon {
 #carrierTable td {
   padding: 15px;
   font-weight: bold;
-  border-right: 1px solid $mercury;
+  border-right: 1px solid $gallery;
 }
 
 #carrierTable td.carrier_price {
@@ -2527,7 +2527,7 @@ p.payment_module {
     }
 
     &:hover {
-      background-color: $wild-sand;
+      background-color: $gallery;
     }
 
     span {
@@ -2862,7 +2862,7 @@ table.discount {
     vertical-align: -2px;
 
     &.icon-ok {
-      color: $chateau-green;
+      color: $forest-green;
     }
 
     &.icon-remove {
@@ -3131,7 +3131,7 @@ div.star.star_hover {
 
     input,
     textarea {
-      border: 1px solid $chateau-green;
+      border: 1px solid $forest-green;
       color: $apple;
       background: url('../img/icon/form-ok.png') 98% 5px no-repeat $blue-romance;
     }
@@ -3238,7 +3238,7 @@ div.star.star_hover {
 
   .facebook-fanbox {
     background: $light-background;
-    border: 1px solid $silver-chalice;
+    border: 1px solid $nobel;
     padding-bottom: 10px;
   }
 }
@@ -3470,7 +3470,7 @@ div.star.star_hover {
   margin-top: 15px;
 
   i {
-    color: $japanese-laurel;
+    color: $forest-green;
   }
 }
 
@@ -3481,7 +3481,7 @@ div.star.star_hover {
 
 .tnc_box {
   background: $alabaster;
-  border: 1px solid $alto;
+  border: 1px solid $silver;
   padding: 14px 18px 13px;
   margin: 0 0 30px;
   line-height: 23px;

@@ -87,7 +87,7 @@ ul.product_list {
 
       .quick-view-mobile:hover {
         @media (max-width: $screen-md-max) {
-          background-color: lighten($silver-chalice, 40%);
+          background-color: lighten($nobel, 40%);
         }
       }
       @media (max-width: $screen-md-max) {
@@ -255,7 +255,7 @@ ul.product_list.grid {
             color: $light-text-color;
 
             &.old-price {
-              color: $silver-chalice;
+              color: $nobel;
             }
           }
         }

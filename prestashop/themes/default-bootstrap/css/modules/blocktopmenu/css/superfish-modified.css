@@ -13,8 +13,8 @@
   position: relative;
   padding: 0;
   width: 100%;
-  border-bottom: 3px solid #e7e7e7;
-  background: #f6f6f6; }
+  border-bottom: 3px solid #eee;
+  background: #eee; }
   @media (max-width: 767px) {
     .sf-menu {
       display: none; } }
@@ -73,7 +73,7 @@
     color: #464646;
     display: block;
     padding: 17px 20px;
-    border-bottom: 3px solid #e7e7e7; }
+    border-bottom: 3px solid #eee; }
   .sf-menu > li.sfHover > a,
   .sf-menu > li > a:hover,
   .sf-menu > li.sfHoverForce > a {
@@ -193,8 +193,8 @@ ul.sf-menu li li li.sfHover ul {
       text-transform: uppercase;
       color: #464646;
       padding: 17px 20px;
-      border-bottom: 3px solid #e7e7e7;
-      background: #f6f6f6;
+      border-bottom: 3px solid #eee;
+      background: #eee;
       position: relative; }
       .cat-title:hover {
         background: #333;
