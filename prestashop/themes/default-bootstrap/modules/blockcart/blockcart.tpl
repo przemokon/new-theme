@@ -27,8 +27,9 @@
 <div class="col-sm-4 clearfix{if $PS_CATALOG_MODE} header_user_catalog{/if}">
 {/if}
 	<div class="shopping_cart">
-		<a href="{$link->getPageLink($order_process, true)|escape:'html':'UTF-8'}" title="{l s='View my shopping cart' mod='blockcart'}" rel="nofollow">
-			<b>{l s='Cart' mod='blockcart'}</b>
+		<a class="hover-rotate-180" href="{$link->getPageLink($order_process, true)|escape:'html':'UTF-8'}" title="{l s='View my shopping cart' mod='blockcart'}" rel="nofollow">
+			<i class="icon icon-shopping-cart"></i>
+			<strong>{l s='Cart' mod='blockcart'}</strong>
 			<span class="ajax_cart_quantity{if $cart_qties == 0} unvisible{/if}">{$cart_qties}</span>
 			<span class="ajax_cart_product_txt{if $cart_qties != 1} unvisible{/if}">{l s='Product' mod='blockcart'}</span>
 			<span class="ajax_cart_product_txt_s{if $cart_qties < 2} unvisible{/if}">{l s='Products' mod='blockcart'}</span>
@@ -48,6 +49,7 @@
 				<span class="block_cart_expand{if !isset($colapseExpandStatus) || (isset($colapseExpandStatus) && $colapseExpandStatus eq 'expanded')} unvisible{/if}">&nbsp;</span>
 				<span class="block_cart_collapse{if isset($colapseExpandStatus) && $colapseExpandStatus eq 'collapsed'} unvisible{/if}">&nbsp;</span>
 			{/if}
+			<i class="icon icon-chevron-down pull-right icon-hover-rotate"></i>
 		</a>
 		{if !$PS_CATALOG_MODE}
 			<div class="cart_block block exclusive">
@@ -83,7 +85,7 @@
 										</div>
 										<span class="remove_link">
 											{if !isset($customizedDatas.$productId.$productAttributeId) && (!isset($product.is_gift) || !$product.is_gift)}
-												<a class="ajax_cart_block_remove_link" href="{$link->getPageLink('cart', true, NULL, "delete=1&id_product={$product.id_product|intval}&ipa={$product.id_product_attribute|intval}&id_address_delivery={$product.id_address_delivery|intval}&token={$static_token}")|escape:'html':'UTF-8'}" rel="nofollow" title="{l s='remove this product from my cart' mod='blockcart'}">&nbsp;</a>
+												<a class="ajax_cart_block_remove_link" href="{$link->getPageLink('cart', true, NULL, "delete=1&id_product={$product.id_product|intval}&ipa={$product.id_product_attribute|intval}&id_address_delivery={$product.id_address_delivery|intval}&token={$static_token}")|escape:'html':'UTF-8'}" rel="nofollow" title="{l s='remove this product from my cart' mod='blockcart'}"><i class="icon icon-times"></i></a>
 											{/if}
 										</span>
 									</dt>
@@ -190,9 +192,9 @@
 							{/if}
 						</div>
 						<p class="cart-buttons">
-							<a id="button_order_cart" class="btn btn-default button button-small" href="{$link->getPageLink("$order_process", true)|escape:"html":"UTF-8"}" title="{l s='Check out' mod='blockcart'}" rel="nofollow">
+							<a id="button_order_cart" class="btn btn-success" href="{$link->getPageLink("$order_process", true)|escape:"html":"UTF-8"}" title="{l s='Check out' mod='blockcart'}" rel="nofollow">
 								<span>
-									{l s='Check out' mod='blockcart'}<i class="icon-chevron-right right"></i>
+									{l s='Check out' mod='blockcart'}<i class="icon icon-chevron-right"></i>
 								</span>
 							</a>
 						</p>

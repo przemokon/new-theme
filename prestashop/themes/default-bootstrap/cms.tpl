@@ -29,8 +29,8 @@
 			<p>
 				<span>{l s='This CMS page is not visible to your customers.'}</span>
 				<input type="hidden" id="admin-action-cms-id" value="{$cms->id}" />
-				<input type="submit" value="{l s='Publish'}" name="publish_button" class="button btn btn-default"/>
-				<input type="submit" value="{l s='Back'}" name="lnk_view" class="button btn btn-default"/>
+				<input type="submit" value="{l s='Publish'}" name="publish_button" class="button btn btn-lg btn-success"/>
+				<input type="submit" value="{l s='Back'}" name="lnk_view" class="button btn btn-lg btn-danger"/>
 			</p>
 			<div class="clear" ></div>
 			<p id="admin-action-result"></p>

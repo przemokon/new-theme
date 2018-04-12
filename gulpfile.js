@@ -64,7 +64,7 @@ gulp.task('sass', function() {
                 'force-element-nesting': 0,
                 'class-name-format': 0,
                 'no-ids': 0,
-                'nesting-depth': 0,
+                'nesting-depth': 1,
                 'no-qualifying-elements': 0,
                 'force-pseudo-nesting': 0,
                 'variable-name-format': 0,

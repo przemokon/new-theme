@@ -6482,6 +6482,12 @@ button.close {
 .icon-medium:before {
   content: ""; }
 
+.hover-rotate-180:hover .icon-hover-rotate {
+  transform: rotate(180deg); }
+
+.icon-hover-rotate {
+  transition: .3s; }
+
 a:hover {
   text-decoration: none; }
 
