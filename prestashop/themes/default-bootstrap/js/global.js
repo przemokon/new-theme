@@ -26,6 +26,8 @@
 var responsiveflag = false;
 
 $(document).ready(function(){
+	$("input[type='radio']").after("<span class='radio-input'></span>");
+	$("input[type='checkbox']").after("<span class='checkbox-input'></span>");
 	highdpiInit();
 	responsiveResize();
 	$(window).resize(responsiveResize);

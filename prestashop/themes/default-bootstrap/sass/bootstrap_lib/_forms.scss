@@ -54,35 +54,23 @@ input[type="checkbox"] {
   margin: 0;
   margin-top: 1px \9; // IE8-9
   line-height: normal;
-  position: relative;
-  display: inline;
-  visibility: hidden;
-
-  &::before {
-      content: '';
-      position: absolute;
-      width: 16px;
-      height: 16px;
-      transform: translate(-2px,-2px);
-      background: $dark-border-color;
-      border: 8px solid $silver;
-      transition: border .2s ease;
-      visibility: visible;
-  }
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
+  opacity: 0;
 
   &:checked {
 
-    &::before {
-      border: 4px solid $silver;
-    }
+  	+ .radio-input {
+  		background: $black;
+  	}
+  	+ .checkbox-input {
+  		background: $black;
+  	}
+		
   }
 }
-input[type="radio"] {
-  
-  &::before {
-    border-radius: 50%;
-  }
-}
+
 
 input[type="file"] {
   display: block;
@@ -247,20 +235,30 @@ input[type="search"] {
 //
 // Indent the labels to position radios/checkboxes as hanging controls.
 
-.radio,
-.checkbox {
-  position: relative;
-  display: block;
-  margin-top: 10px;
-  margin-bottom: 10px;
+.radio-input,
+.checkbox-input {
+	position: relative;
+	width: 15px;
+	height: 15px;
+	background: $white;
+	border: 2px solid $white;
+	box-shadow: 1px 1px 1px $gray;
+	transition: .2s ease;
+	display: inline-block;
+	cursor: pointer;
 
   label {
-    min-height: $line-height-computed; // Ensure the input doesn't jump when there is no text
+		min-height: $line-height-computed; // Ensure the input doesn't jump when there is no text
     margin-bottom: 0;
     font-weight: normal;
     cursor: pointer;
   }
+}
+
+.radio-input {
+	border-radius: 50%;	
 } 
+
 .radio input[type="radio"],
 .radio-inline input[type="radio"],
 .checkbox input[type="checkbox"],
