@@ -53,7 +53,7 @@
 				</div>
 				<p class="submit">
                     <button id="submitWishlist" class="btn btn-default button button-medium" type="submit" name="submitWishlist">
-                    	<span>{l s='Save' mod='blockwishlist'}<i class="icon-chevron-right right"></i></span>
+                    	<span>{l s='Save' mod='blockwishlist'}<i class="icon icon-fw icon-chevron-right"></i></span>
                     </button>
 				</p>
 			</fieldset>
@@ -103,17 +103,17 @@
 								<td class="wishlist_default">
 									{if isset($wishlists[i].default) && $wishlists[i].default == 1}
 										<p class="is_wish_list_default">
-											<i class="icon icon-check-square"></i>
+											<i class="icon icon icon-fw icon-check-square"></i>
 										</p>
 									{else}
 										<a href="#" onclick="javascript:event.preventDefault();(WishlistDefault('wishlist_{$wishlists[i].id_wishlist|intval}', '{$wishlists[i].id_wishlist|intval}'));">
-											<i class="icon icon-square"></i>
+											<i class="icon icon icon-fw icon-square"></i>
 										</a>
 									{/if}
 								</td>
 								<td class="wishlist_delete">
 									<a class="icon" href="#" onclick="javascript:event.preventDefault();return (WishlistDelete('wishlist_{$wishlists[i].id_wishlist|intval}', '{$wishlists[i].id_wishlist|intval}', '{l s='Do you really want to delete this wishlist ?' mod='blockwishlist' js=1}'));">
-										<i class="icon-remove"></i>
+										<i class="icon icon-fw icon-remove"></i>
 									</a>
 								</td>
 							</tr>
@@ -128,14 +128,14 @@
 		<li>
 			<a class="btn btn-default button button-small" href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}">
 				<span>
-					<i class="icon-chevron-left"></i>{l s='Back to Your Account' mod='blockwishlist'}
+					<i class="icon icon-fw icon-chevron-left"></i>{l s='Back to Your Account' mod='blockwishlist'}
 				</span>
 			</a>
 		</li>
 		<li>
 			<a class="btn btn-default button button-small" href="{$base_dir|escape:'html':'UTF-8'}">
 				<span>
-					<i class="icon-chevron-left"></i>{l s='Home' mod='blockwishlist'}
+					<i class="icon icon-fw icon-chevron-left"></i>{l s='Home' mod='blockwishlist'}
 				</span>
 			</a>
 		</li>

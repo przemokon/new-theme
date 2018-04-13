@@ -53,7 +53,10 @@
                 {/foreach}
             </ul>
             <div>
-                <a href="{$link->getPageLink('new-products')|escape:'html'}" title="{l s='All new products' mod='blocknewproducts'}" class="btn btn-default button button-small"><span>{l s='All new products' mod='blocknewproducts'}<i class="icon-chevron-right right"></i></span></a>
+                <a href="{$link->getPageLink('new-products')|escape:'html'}" title="{l s='All new products' mod='blocknewproducts'}" class="btn btn-default button button-small">
+                    <span>{l s='All new products' mod='blocknewproducts'}</span>
+                    <i class="icon icon-fw icon-chevron-right"></i>
+                </a>
             </div>
         {else}
         	<p>&raquo; {l s='Do not allow new products at this time.' mod='blocknewproducts'}</p>

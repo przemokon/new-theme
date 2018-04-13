@@ -54,12 +54,12 @@
 					</li>
 					<li id="grid">
 						<a rel="nofollow" href="#" title="{l s='Grid'}">
-							<i class="icon-th-large"></i>{l s='Grid'}
+							<i class="icon icon-fw icon-th-large"></i>{l s='Grid'}
 						</a>
 					</li>
 					<li id="list">
 						<a rel="nofollow" href="#" title="{l s='List'}">
-							<i class="icon-th-list"></i>{l s='List'}
+							<i class="icon icon-fw icon-th-list"></i>{l s='List'}
 						</a>
 					</li>
 				</ul>
@@ -126,7 +126,10 @@
 			                    	{/if}
 			                    </p>
 			                    {if isset($supplier.nb_products) && $supplier.nb_products > 0}
-			                        <a class="btn btn-default button exclusive-medium" href="{$link->getsupplierLink($supplier.id_supplier, $supplier.link_rewrite)|escape:'html':'UTF-8'}"><span>{l s='View products'} <i class="icon-chevron-right right"></i></span></a>
+			                        <a class="btn btn-default button exclusive-medium" href="{$link->getsupplierLink($supplier.id_supplier, $supplier.link_rewrite)|escape:'html':'UTF-8'}">
+			                        	<span>{l s='View products'}</span>
+			                        	<i class="icon icon-fw icon-chevron-right"></i>
+			                        </a>
 			                    {/if}
 			                </div>
 						</div><!-- .right-side -->

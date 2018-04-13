@@ -31,9 +31,8 @@
 	<ul class="footer_links clearfix">
 		<li>
 			<a class="btn btn-default button button-small" href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}">
-				<span>
-					<i class="icon-chevron-left"></i>{l s='Home'}
-				</span>
+				<i class="icon icon-fw icon-chevron-left"></i>
+				<span>{l s='Home'}</span>
 			</a>
 		</li>
 	</ul>
@@ -42,9 +41,8 @@
 	<ul class="footer_links clearfix">
 		<li>
 			<a class="btn btn-default button button-small" href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}">
-				<span>
-					<i class="icon-chevron-left"></i>{l s='Home'}
-				</span>
+				<i class="icon icon-fw icon-chevron-left"></i>
+				<span>{l s='Home'}</span>
 			</a>
 		</li>
 	</ul>
@@ -82,7 +80,7 @@
 						<p id="desc_contact0" class="desc_contact{if isset($smarty.request.id_contact)} unvisible{/if}">&nbsp;</p>
 						{foreach from=$contacts item=contact}
 							<p id="desc_contact{$contact.id_contact|intval}" class="desc_contact contact-title{if !isset($smarty.request.id_contact) || $smarty.request.id_contact|intval != $contact.id_contact|intval} unvisible{/if}">
-								<i class="icon-comment-alt"></i>{$contact.description|escape:'html':'UTF-8'}
+								<i class="icon icon-fw icon-comment-alt"></i>{$contact.description|escape:'html':'UTF-8'}
 							</p>
 						{/foreach}
 					{/if}
@@ -148,7 +146,10 @@
 			<div class="submit">
 				<input type="text" name="url" value="" class="hidden" />
 				<input type="hidden" name="contactKey" value="{$contactKey}" />
-				<button type="submit" name="submitMessage" id="submitMessage" class="button btn btn-default button-medium"><span>{l s='Send'}<i class="icon-chevron-right right"></i></span></button>
+				<button type="submit" name="submitMessage" id="submitMessage" class="button btn btn-default button-medium">
+					<span>{l s='Send'}</span>
+					<i class="icon icon-fw icon-chevron-right"></i>
+				</button>
 			</div>
 		</fieldset>
 	</form>

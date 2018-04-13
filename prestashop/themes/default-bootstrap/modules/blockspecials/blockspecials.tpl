@@ -77,11 +77,9 @@
             </li>
 		</ul>
 		<div>
-			<a 
-            class="btn btn-default button button-small" 
-            href="{$link->getPageLink('prices-drop')|escape:'html':'UTF-8'}" 
-            title="{l s='All specials' mod='blockspecials'}">
-                <span>{l s='All specials' mod='blockspecials'}<i class="icon-chevron-right right"></i></span>
+			<a class="btn btn-default button button-small" href="{$link->getPageLink('prices-drop')|escape:'html':'UTF-8'}" title="{l s='All specials' mod='blockspecials'}">
+                <span>{l s='All specials' mod='blockspecials'}</span>
+                <i class="icon icon-fw icon-chevron-right"></i>
             </a>
 		</div>
     {else}

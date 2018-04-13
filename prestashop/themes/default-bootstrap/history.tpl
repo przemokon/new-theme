@@ -79,7 +79,7 @@
 						<td class="history_invoice">
 							{if (isset($order.invoice) && $order.invoice && isset($order.invoice_number) && $order.invoice_number) && isset($invoiceAllowed) && $invoiceAllowed == true}
 								<a class="link-button" href="{$link->getPageLink('pdf-invoice', true, NULL, "id_order={$order.id_order}")|escape:'html':'UTF-8'}" title="{l s='Invoice'}" target="_blank">
-									<i class="icon-file-text large"></i>{l s='PDF'}
+									<i class="icon icon-fw icon-file-text large"></i>{l s='PDF'}
 								</a>
 							{else}
 								-
@@ -87,9 +87,8 @@
 						</td>
 						<td class="history_detail">
 							<a class="btn btn-default button button-small" href="javascript:showOrder(1, {$order.id_order|intval}, '{$link->getPageLink('order-detail', true, NULL, "id_order={$order.id_order|intval}")|escape:'html':'UTF-8'}');">
-								<span>
-									{l s='Details'}<i class="icon-chevron-right right"></i>
-								</span>
+								<span>{l s='Details'}</span>
+								<i class="icon icon-fw icon-chevron-right right"></i>
 							</a>
 							{if isset($opc) && $opc}
 								<a class="link-button" href="{$link->getPageLink('order-opc', true, NULL, "submitReorder&id_order={$order.id_order|intval}")|escape:'html':'UTF-8'}" title="{l s='Reorder'}">
@@ -97,7 +96,7 @@
 								<a class="link-button" href="{$link->getPageLink('order', true, NULL, "submitReorder&id_order={$order.id_order|intval}")|escape:'html':'UTF-8'}" title="{l s='Reorder'}">
 							{/if}
 								{if isset($reorderingAllowed) && $reorderingAllowed}
-									<i class="icon-refresh"></i>{l s='Reorder'}
+									<i class="icon icon-fw icon-refresh"></i>{l s='Reorder'}
 								{/if}
 							</a>
 						</td>
@@ -113,14 +112,14 @@
 <ul class="footer_links clearfix">
 	<li>
 		<a class="btn btn-default button button-small" href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}">
-			<span>
-				<i class="icon-chevron-left"></i> {l s='Back to Your Account'}
-			</span>
+			<span>{l s='Back to Your Account'}</span>
+			<i class="icon icon-fw icon-chevron-left"></i> 
 		</a>
 	</li>
 	<li>
 		<a class="btn btn-default button button-small" href="{$base_dir}">
-			<span><i class="icon-chevron-left"></i> {l s='Home'}</span>
+			<span>{l s='Home'}</span>
+			<i class="icon icon-fw icon-chevron-left"></i>
 		</a>
 	</li>
 </ul>

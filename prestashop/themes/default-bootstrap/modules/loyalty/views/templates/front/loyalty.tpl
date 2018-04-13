@@ -81,13 +81,14 @@
 				{assign var='p_previous' value=$page-1}
 				<li id="pagination_previous" class="pagination_previous">
 					<a href="{summarypaginationlink p=$p_previous n=$nbpagination}" title="{l s='Previous' mod='loyalty'}" rel="prev">
-						<i class="icon-chevron-left"></i> <b>{l s='Previous' mod='loyalty'}</b>
+						<i class="icon icon-fw icon-chevron-left"></i> <b>{l s='Previous' mod='loyalty'}</b>
 					</a>
 				</li>
 			{else}
 				<li id="pagination_previous" class="disabled pagination_previous">
+					<i class="icon icon-fw icon-chevron-left"></i>
 					<span>
-						<i class="icon-chevron-left"></i> <b>{l s='Previous' mod='loyalty'}</b>
+						<b>{l s='Previous' mod='loyalty'}</b>
 					</span>
 				</li>
 			{/if}
@@ -136,13 +137,13 @@
 				{assign var='p_next' value=$page+1}
 				<li id="pagination_next" class="pagination_next">
 					<a href="{summarypaginationlink p=$p_next n=$nbpagination}" rel="next">
-						<b>{l s='Next' mod='loyalty'}</b> <i class="icon-chevron-right"></i>
+						<b>{l s='Next' mod='loyalty'}</b> <i class="icon icon-fw icon-chevron-right"></i>
 					</a>
 				</li>
 			{else}
 				<li id="pagination_next" class="pagination_next disabled">
 					<span>
-						<b>{l s='Next' mod='loyalty'}</b> <i class="icon-chevron-right"></i>
+						<b>{l s='Next' mod='loyalty'}</b> <i class="icon icon-fw icon-chevron-right"></i>
 					</span>
 				</li>
 			{/if}
@@ -240,9 +241,15 @@
 
 <ul class="footer_links clearfix">
 	<li>
-		<a class="btn btn-default button button-small" href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}" title="{l s='Back to Your Account' mod='loyalty'}" rel="nofollow"><span><i class="icon-chevron-left"></i>{l s='Back to Your Account' mod='loyalty'}</span></a>
+		<a class="btn btn-default button button-small" href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}" title="{l s='Back to Your Account' mod='loyalty'}" rel="nofollow">
+			<i class="icon icon-fw icon-chevron-left"></i>
+			<span>{l s='Back to Your Account' mod='loyalty'}</span>
+		</a>
 	</li>
 	<li>
-		<a class="btn btn-default button button-small" href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}" title="{l s='Home' mod='loyalty'}"><span><i class="icon-chevron-left"></i>{l s='Home' mod='loyalty'}</span></a>
+		<a class="btn btn-default button button-small" href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}" title="{l s='Home' mod='loyalty'}">
+			<i class="icon icon-fw icon-chevron-left"></i>
+			<span>{l s='Home' mod='loyalty'}</span>
+		</a>
 	</li>
 </ul>

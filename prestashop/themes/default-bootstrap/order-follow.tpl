@@ -62,9 +62,8 @@
 		<input class="unvisible" type="submit" name="submitReturnMerchandise" value="{l s='Make an RMA slip'}"/>
 		<p>
 	        <button type="submit" name="submitReturnMerchandise" class="btn btn-default button button-small">
-	        	<span>
-	        		{l s='Make an RMA slip'}<i class="icon icon-chevron-right right"></i>
-	        	</span>
+	        	<span>{l s='Make an RMA slip'}</span>
+	        	<i class="icon icon-fw icon-chevron-right"></i>
 	        </button>
 	   	</p>
 	</form>
@@ -129,7 +128,7 @@
 					<td class="history_invoice">
 						{if $return.state == 2}
 							<a class="link-button" href="{$link->getPageLink('pdf-order-return', true, NULL, "id_order_return={$return.id_order_return|intval}")|escape:'html':'UTF-8'}" title="{l s='Order return'} {l s='#'}{$return.id_order_return|string_format:"%06d"}">
-								<i class="icon icon-file-text"></i> {l s='Print out'}
+								<i class="icon icon-fw icon-file-text"></i> {l s='Print out'}
 							</a>
 						{else}
 							--
@@ -148,16 +147,14 @@
 <ul class="footer_links clearfix">
 	<li>
 		<a class="btn btn-default button button-small" href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}">
-			<span>
-				<i class="icon icon-chevron-left"></i> {l s='Back to your account'}
-			</span>
+			<span>{l s='Back to your account'}</span>
+			<i class="icon icon-fw icon-chevron-left"></i>
 		</a>
 	</li>
 	<li>
 		<a class="btn btn-default button button-small" href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}">
-			<span>
-				<i class="icon icon-chevron-left"></i> {l s='Home'}
-			</span>
+			<span>{l s='Home'}</span>
+			<i class="icon icon-fw icon-chevron-left"></i>
 		</a>
 	</li>
 </ul>

@@ -338,11 +338,8 @@
                     <td class="cart_discount_delete">1</td>
                     <td class="price_discount_del text-center">
                         {if strlen($discount.code)}
-                            <a
-                                    href="{if $opc}{$link->getPageLink('order-opc', true)}{else}{$link->getPageLink('order', true)}{/if}?deleteDiscount={$discount.id_discount}"
-                                    class="price_discount_delete"
-                                    title="{l s='Delete'}">
-                                <i class="icon icon-trash"></i>
+                            <a href="{if $opc}{$link->getPageLink('order-opc', true)}{else}{$link->getPageLink('order', true)}{/if}?deleteDiscount={$discount.id_discount}" class="price_discount_delete" title="{l s='Delete'}">
+                                <i class="icon icon-fw icon-trash"></i>
                             </a>
                         {/if}
                     </td>
@@ -366,7 +363,7 @@
         {assign var='back_link' value=$link->getPageLink('order', true, NULL, "step=2")}
     {/if}
     <a href="{$back_link|escape:'html':'UTF-8'}" title="{l s='Previous'}" class="button-exclusive btn btn-default">
-        <i class="icon icon-chevron-left"></i>
+        <i class="icon icon-fw icon-chevron-left"></i>
         {l s='Continue shopping'}
     </a>
     <button data-show-if-js="" style="" id="confirmOrder" type="button" class="button btn btn-default standard-checkout button-medium"><span>{l s='Order With Obligation To Pay'}</span></button>

@@ -20,7 +20,10 @@
                 <a href="{$link->getPageLink('password', true)|escape:'html':'UTF-8'}" class="lost_password">{l s='Forgot your password?'}</a>
                 <p class="submit">
                     {if isset($back)}<input type="hidden" class="hidden" name="back" value="{$back|escape:'html':'UTF-8'}" />{/if}
-                    <button type="submit" id="SubmitLogin" name="SubmitLogin" data-adv-api="1" class="button btn btn-default button-medium"><span><i class="icon icon-lock left"></i>{l s='Sign in'}</span></button>
+                    <button type="submit" id="SubmitLogin" name="SubmitLogin" data-adv-api="1" class="button btn btn-default button-medium">
+                        <i class="icon icon-fw icon-lock"></i>
+                        <span>{l s='Sign in'}</span>
+                    </button>
                 </p>
             </div>
         </fieldset>
@@ -44,7 +47,10 @@
                             <li>- {l s='Separate billing and shipping addresses'}</li>
                         </ul>
                         <p class="opc-button">
-                            <button type="submit" class="btn btn-default button button-medium exclusive" id="opc_createAccount"><span><i class="icon icon-user left"></i>{l s='Create an account'}</span></button>
+                            <button type="submit" class="btn btn-default button button-medium exclusive" id="opc_createAccount">
+                                <i class="icon icon-fw icon-user left"></i>
+                                <span>{l s='Create an account'}</span>
+                            </button>
                         </p>
                     </div>
                 </div>
@@ -384,7 +390,10 @@
                         <p class="required opc-required pull-right">
                             <sup>*</sup>{l s='Required field'}
                         </p>
-                        <button type="submit" name="submitAccount" id="submitAccount" data-adv-api="1" class="btn btn-default button button-medium"><span>{l s='Save'}<i class="icon icon-chevron-right right"></i></span></button>
+                        <button type="submit" name="submitAccount" id="submitAccount" data-adv-api="1" class="btn btn-default button button-medium">
+                            <span>{l s='Save'}</span>
+                            <i class="icon icon-fw icon-chevron-right"></i>
+                        </button>
 
                     </div>
                     <div style="display: none;" id="opc_account_saved" class="alert alert-success">

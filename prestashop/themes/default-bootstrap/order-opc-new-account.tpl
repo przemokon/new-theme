@@ -9,7 +9,7 @@
 	</div>
 
 	<form action="{$link->getPageLink('authentication', true, NULL, "back=order-opc")|escape:'html':'UTF-8'}" method="post" id="login_form" class="login-form">
-		<span class="hide_login-form"><i class="icon icon-times"></i></span>
+		<span class="hide_login-form"><i class="icon icon-fw icon-times"></i></span>
 		<fieldset class="form-group">
 				<!-- Error return block -->
 
@@ -381,7 +381,10 @@
 						<p class="required opc-required pull-right">
 							<sup>*</sup>{l s='Required field'}
 						</p>
-{* 						<button type="submit" name="submitAccount" id="submitAccount" class="btn btn-default button button-medium"><span>{l s='Save'}<i class="icon icon-chevron-right right"></i></span></button> *}
+{* 						<button type="submit" name="submitAccount" id="submitAccount" class="btn btn-default button button-medium">
+							<span>{l s='Save'}</span>
+							<i class="icon icon-fw icon-chevron-right"></i>
+						</button> *}
 
 					</div>
 					<div style="display: none;" id="opc_account_saved" class="alert alert-success">

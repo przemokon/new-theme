@@ -52,7 +52,7 @@
                     <div class="product_desc">{$favoriteProduct.description_short|strip_tags|escape:'html':'UTF-8'}</div>
                     <div class="remove">
                     	<a href="#" rel="ajax_id_favoriteproduct_{$favoriteProduct.id_product}">
-                    		<i class="icon-remove"></i>
+                    		<i class="icon icon-fw icon-remove"></i>
                     	</a>
                     </div>
                 </div>
@@ -68,9 +68,8 @@
 			<a 
 			class="btn btn-default button button-small" 
 			href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}">
-				<span>
-					<i class="icon-chevron-left"></i>{l s='Back to your account' mod='favoriteproducts'}
-				</span>
+				<span>{l s='Back to your account' mod='favoriteproducts'}</span>
+				<i class="icon icon-fw icon-chevron-left"></i>
 			</a>
 		</li>
 	</ul>

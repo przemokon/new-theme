@@ -63,10 +63,8 @@
 					<div class="submit">
 						{if isset($back)}<input type="hidden" class="hidden" name="back" value="{$back|escape:'html':'UTF-8'}" />{/if}
 						<button class="btn btn-default button button-medium exclusive" type="submit" id="SubmitCreate" name="SubmitCreate">
-							<span>
-								<i class="icon-user left"></i>
-								{l s='Create an account'}
-							</span>
+							<i class="icon icon-fw icon-user"></i>
+							<span>{l s='Create an account'}</span>
 						</button>
 						<input type="hidden" class="hidden" name="SubmitCreate" value="{l s='Create an account'}" />
 					</div>
@@ -89,10 +87,8 @@
 					<p class="submit">
 						{if isset($back)}<input type="hidden" class="hidden" name="back" value="{$back|escape:'html':'UTF-8'}" />{/if}
 						<button type="submit" id="SubmitLogin" name="SubmitLogin" class="button btn btn-default button-medium">
-							<span>
-								<i class="icon-lock left"></i>
-								{l s='Sign in'}
-							</span>
+							<i class="icon icon-fw icon-lock"></i>
+							<span>{l s='Sign in'}</span>
 						</button>
 					</p>
 				</div>
@@ -402,10 +398,8 @@
 				<span><sup>*</sup>{l s='Required field'}</span>
 				<input type="hidden" name="display_guest_checkout" value="1" />
 				<button type="submit" class="button btn btn-default button-medium" name="submitGuestAccount" id="submitGuestAccount">
-					<span>
-						{l s='Proceed to checkout'}
-						<i class="icon-chevron-right right"></i>
-					</span>
+					<span>{l s='Proceed to checkout'}</span>
+					<i class="icon icon-fw icon-chevron-right"></i>
 				</button>
 			</p>
 		</form>
@@ -664,7 +658,8 @@
 			<input type="hidden" name="is_new_customer" value="1" />
 			{if isset($back)}<input type="hidden" class="hidden" name="back" value="{$back|escape:'html':'UTF-8'}" />{/if}
 			<button type="submit" name="submitAccount" id="submitAccount" class="btn btn-default button button-medium">
-				<span>{l s='Register'}<i class="icon-chevron-right right"></i></span>
+				<span>{l s='Register'}</span>
+				<i class="icon icon-fw icon-chevron-right right"></i>
 			</button>
 			<p class="pull-right required"><span><sup>*</sup>{l s='Required field'}</span></p>
 		</div>

@@ -41,7 +41,7 @@
 					<td class="ajax_block_product comparison_infos product-block product-{$product->id}">
 						<div class="remove">
 							<a class="cmp_remove" href="{$link->getPageLink('products-comparison', true)|escape:'html':'UTF-8'}" title="{l s='Remove'}" data-id-product="{$product->id}">
-								<i class="icon-trash"></i>
+								<i class="icon icon-fw icon-trash"></i>
 							</a>
 						</div>
 						<div class="product-image-block">
@@ -186,10 +186,10 @@
 {else}
 	<p class="alert alert-warning">{l s='There are no products selected for comparison.'}</p>
 {/if}
-<ul class="footer_link">
-	<li>
-		<a class="button lnk_view btn btn-default" href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}">
-			<span><i class="icon-chevron-left left"></i>{l s='Continue Shopping'}</span>
-		</a>
-	</li>
-</ul>
+
+<div class="footer-link">
+	<a href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}" class="btn btn-default">
+		<i class="icon icon-fw icon-chevron-left"></i>
+		<span>{l s='Continue Shopping'}</span>
+	</a>
+</div>

@@ -81,9 +81,8 @@
     	<td class="{$classname} comparison_infos product-{$id_product}" align="center" >
     		{if isset($product_comments[$id_product]) AND $product_comments[$id_product]}
     			<a class="btn btn-default button button-small" href="#" data-id-product-comment="{$id_product|intval}" rel="#comments_{$id_product|intval}">
-    				<span>
-    					{l s='View comments' mod='productcomments'}<i class="icon-chevron-right right"></i>
-    				</span>
+    				<span>{l s='View comments' mod='productcomments'}</span>
+                    <i class="icon icon-fw icon-chevron-right"></i>
     			</a>
     			<div style="display:none" id="comments_{$id_product}">   
     				{foreach from=$product_comments[$id_product] item=comment}	

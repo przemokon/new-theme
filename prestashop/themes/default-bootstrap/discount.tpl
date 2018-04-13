@@ -78,9 +78,9 @@
 					</td>
 					<td class="discount_cumulative">
 						{if $discountDetail.cumulable == 1}
-							<i class="icon-ok icon"></i> {l s='Yes'}
+							<i class="icon icon-fw icon-ok"></i> {l s='Yes'}
 						{else}
-							<i class="icon-remove icon"></i> {l s='No'}
+							<i class="icon icon-fw icon-remove"></i> {l s='No'}
 						{/if}
 					</td>
 					<td class="discount_expiration_date" data-value="{$discountDetail.date_to|regex_replace:"/[\-\:\ ]/":""}">
@@ -98,14 +98,14 @@
 	<li>
 		<a class="btn btn-default button button-small" href="{$link->getPageLink('my-account', true)|escape:'html':'UTF-8'}">
 			<span>
-				<i class="icon-chevron-left"></i> {l s='Back to your account'}
+				<i class="icon icon-fw icon-chevron-left"></i> {l s='Back to your account'}
 			</span>
 		</a>
 	</li>
 	<li>
 		<a class="btn btn-default button button-small" href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}">
 			<span>
-				<i class="icon-chevron-left"></i> {l s='Home'}
+				<i class="icon icon-fw icon-chevron-left"></i> {l s='Home'}
 			</span>
 		</a>
 	</li>

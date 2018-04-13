@@ -373,27 +373,25 @@
                     {if !$is_guest}
                         {if $back}
                             <a href="{$link->getPageLink('order', true, NULL, "step=1&back={$back}{if $multi_shipping}&multi-shipping={$multi_shipping}{/if}")|escape:'html':'UTF-8'}" title="{l s='Previous'}" class="button-exclusive btn btn-default">
-                                <i class="icon icon-chevron-left"></i>
+                                <i class="icon icon-fw icon-chevron-left"></i>
                                 {l s='Continue shopping'}
                             </a>
                         {else}
                             <a href="{$link->getPageLink('order', true, NULL, "step=1{if $multi_shipping}&multi-shipping={$multi_shipping}{/if}")|escape:'html':'UTF-8'}" title="{l s='Previous'}" class="button-exclusive btn btn-default">
-                                <i class="icon icon-chevron-left"></i>
+                                <i class="icon icon-fw icon-chevron-left"></i>
                                 {l s='Continue shopping'}
                             </a>
                         {/if}
                     {else}
                         <a href="{$link->getPageLink('order', true, NULL, "{if $multi_shipping}multi-shipping={$multi_shipping}{/if}")|escape:'html':'UTF-8'}" title="{l s='Previous'}" class="button-exclusive btn btn-default">
-                            <i class="icon icon-chevron-left"></i>
+                            <i class="icon icon-fw icon-chevron-left"></i>
                             {l s='Continue shopping'}
                         </a>
                     {/if}
                     {if isset($virtual_cart) && $virtual_cart || (isset($delivery_option_list) && !empty($delivery_option_list))}
                         <button type="submit" name="processCarrier" class="button btn btn-default standard-checkout button-medium">
-							<span>
-								{l s='Proceed to checkout'}
-                                <i class="icon icon-chevron-right right"></i>
-							</span>
+							<span>{l s='Proceed to checkout'}</span>
+                            <i class="icon icon-fw icon-chevron-right"></i>
                         </button>
                     {/if}
                 </p>

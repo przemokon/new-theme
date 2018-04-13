@@ -42,11 +42,9 @@
         </p>
         {/if}
 		<div>
-			<a 
-			class="btn btn-default button button-small" 
-			href="{$link->getPageLink('stores')|escape:'html':'UTF-8'}" 
-			title="{l s='Our stores' mod='blockstore'}">
-				<span>{l s='Discover our stores' mod='blockstore'}<i class="icon-chevron-right right"></i></span>
+			<a class="btn btn-default button button-small" href="{$link->getPageLink('stores')|escape:'html':'UTF-8'}" title="{l s='Our stores' mod='blockstore'}">
+				<span>{l s='Discover our stores' mod='blockstore'}</span>
+				<i class="icon icon-fw icon-chevron-right"></i>
 			</a>
 		</div>
 	</div>

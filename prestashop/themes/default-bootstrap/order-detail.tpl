@@ -29,7 +29,10 @@
 		<input type="hidden" value="{$order->id}" name="id_order"/>
 		<input type="hidden" value="" name="submitReorder"/>
 
-		<a href="#" onclick="$(this).closest('form').submit(); return false;" class="button btn btn-default button-medium pull-right"><span>{l s='Reorder'}<i class="icon icon-chevron-right right"></i></span></a>
+		<a href="#" onclick="$(this).closest('form').submit(); return false;" class="button btn btn-default button-medium pull-right">
+			<span>{l s='Reorder'}</span>
+			<i class="icon icon-fw icon-chevron-right right"></i>
+		</a>
 	</form>
 	{/if}
 	<p class="dark">
@@ -41,15 +44,15 @@
 	<p><strong class="dark">{l s='Payment method'}</strong> <span class="color-myaccount">{$order->payment|escape:'html':'UTF-8'}</span></p>
 	{if $invoice AND $invoiceAllowed}
 	<p>
-		<i class="icon icon-file-text"></i>
+		<i class="icon icon-fw icon-file-text"></i>
 		<a target="_blank" href="{$link->getPageLink('pdf-invoice', true)}?id_order={$order->id|intval}{if $is_guest}&amp;secure_key={$order->secure_key|escape:'html':'UTF-8'}{/if}">{l s='Download your invoice as a PDF file.'}</a>
 	</p>
 	{/if}
 	{if $order->recyclable}
-	<p><i class="icon icon-repeat"></i>&nbsp;{l s='You have given permission to receive your order in recycled packaging.'}</p>
+	<p><i class="icon icon-fw icon-repeat"></i>&nbsp;{l s='You have given permission to receive your order in recycled packaging.'}</p>
 	{/if}
 	{if $order->gift}
-		<p><i class="icon icon-gift"></i>&nbsp;{l s='You have requested gift wrapping for this order.'}</p>
+		<p><i class="icon icon-fw icon-gift"></i>&nbsp;{l s='You have requested gift wrapping for this order.'}</p>
 		<p><strong class="dark">{l s='Message'}</strong> {$order->gift_message|nl2br}</p>
 	{/if}
 </div>
@@ -207,8 +210,12 @@
 						<td>
 						<input class="order_qte_input form-control grey"  name="order_qte_input[{$smarty.foreach.products.index}]" type="text" size="2" value="{$product.customizationQuantityTotal|intval}" />
 							<div class="clearfix return_quantity_buttons">
-								<a href="#" class="return_quantity_down btn btn-default button-minus"><span><i class="icon icon-minus"></i></span></a>
-								<a href="#" class="return_quantity_up btn btn-default button-plus"><span><i class="icon icon-plus"></i></span></a>
+								<a href="#" class="return_quantity_down btn btn-default button-minus">
+									<span><i class="icon icon-fw icon-minus"></i></span>
+								</a>
+								<a href="#" class="return_quantity_up btn btn-default button-plus">
+									<span><i class="icon icon-fw icon-plus"></i></span>
+								</a>
 							</div>
 							<label for="cb_{$product.id_order_detail|intval}"><span class="order_qte_span editable">{$product.customizationQuantityTotal|intval}</span></label></td>
 						{if $order->hasProductReturned()}
@@ -268,8 +275,12 @@
 							<td>
 								<input class="order_qte_input form-control grey" name="customization_qty_input[{$customizationId|intval}]" type="text" size="2" value="{$customization.quantity|intval}" />
 								<div class="clearfix return_quantity_buttons">
-									<a href="#" class="return_quantity_down btn btn-default button-minus"><span><i class="icon icon-minus"></i></span></a>
-									<a href="#" class="return_quantity_up btn btn-default button-plus"><span><i class="icon icon-plus"></i></span></a>
+									<a href="#" class="return_quantity_down btn btn-default button-minus">
+										<span><i class="icon icon-fw icon-minus"></i></span>
+									</a>
+									<a href="#" class="return_quantity_up btn btn-default button-plus">
+										<span><i class="icon icon-fw icon-plus"></i></span>
+									</a>
 								</div>
 								<label for="cb_{$product.id_order_detail|intval}"><span class="order_qte_span editable">{$customization.quantity|intval}</span></label>
 							</td>
@@ -306,8 +317,12 @@
 						<td class="return_quantity">
 							<input class="order_qte_input form-control grey" name="order_qte_input[{$product.id_order_detail|intval}]" type="text" size="2" value="{$productQuantity|intval}" />
 							<div class="clearfix return_quantity_buttons">
-								<a href="#" class="return_quantity_down btn btn-default button-minus"><span><i class="icon icon-minus"></i></span></a>
-								<a href="#" class="return_quantity_up btn btn-default button-plus"><span><i class="icon icon-plus"></i></span></a>
+								<a href="#" class="return_quantity_down btn btn-default button-minus">
+									<span><i class="icon icon-fw icon-minus"></i></span>
+								</a>
+								<a href="#" class="return_quantity_up btn btn-default button-plus">
+									<span><i class="icon icon-fw icon-plus"></i></span>
+								</a>
 							</div>
 							<label for="cb_{$product.id_order_detail|intval}"><span class="order_qte_span editable">{$productQuantity|intval}</span></label></td>
 						{if $order->hasProductReturned()}
@@ -360,7 +375,10 @@
 			<textarea class="form-control" cols="67" rows="3" name="returnText"></textarea>
 		</p>
 		<p class="form-group">
-			<button type="submit" name="submitReturnMerchandise" class="btn btn-default button button-small"><span>{l s='Make an RMA slip'}<i class="icon icon-chevron-right right"></i></span></button>
+			<button type="submit" name="submitReturnMerchandise" class="btn btn-default button button-small">
+				<span>{l s='Make an RMA slip'}</span>
+				<i class="icon icon-fw icon-chevron-right right"></i>
+			</button>
 			<input type="hidden" class="hidden" value="{$order->id|intval}" name="id_order" />
 		</p>
 	</div>
@@ -460,10 +478,13 @@
 		<div class="submit">
 			<input type="hidden" name="id_order" value="{$order->id|intval}" />
 			<input type="submit" class="unvisible" name="submitMessage" value="{l s='Send'}"/>
-			<button type="submit" name="submitMessage" class="button btn btn-default button-medium"><span>{l s='Send'}<i class="icon icon-chevron-right right"></i></span></button>
+			<button type="submit" name="submitMessage" class="button btn btn-default button-medium">
+				<span>{l s='Send'}</span>
+				<i class="icon icon-fw icon-chevron-right right"></i>
+			</button>
 		</div>
 	</form>
 {else}
-<p class="alert alert-info"><i class="icon icon-info-sign"></i>{l s='You cannot return merchandise with a guest account'}</p>
+<p class="alert alert-info"><i class="icon icon-fw icon-info-sign"></i>{l s='You cannot return merchandise with a guest account'}</p>
 {/if}
 {/if}

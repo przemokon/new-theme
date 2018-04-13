@@ -29,6 +29,7 @@
 			{if $language.iso_code == $lang_iso}
 				<div class="current">
 					<span>{$language.name|regex_replace:"/\s\(.*\)$/":""}</span>
+					<i class="icon icon-fw icon-caret-down"></i>
 				</div>
 			{/if}
 		{/foreach}

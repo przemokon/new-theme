@@ -195,7 +195,8 @@
 		{/if}
                 <div class="form-group">
                     <button type="submit" name="submitIdentity" class="btn btn-default button button-medium">
-                        <span>{l s='Save'}<i class="icon-chevron-right right"></i></span>
+                        <span>{l s='Save'}</span>
+                        <i class="icon icon-fw icon-chevron-right right"></i>
                     </button>
                 </div>
             </fieldset>
@@ -205,16 +206,14 @@
 <ul class="footer_links clearfix">
 	<li>
         <a class="btn btn-default button button-small" href="{$link->getPageLink('my-account', true)}">
-            <span>
-                <i class="icon-chevron-left"></i>{l s='Back to your account'}
-            </span>
+            <span>{l s='Back to your account'}</span>
+            <i class="icon icon-fw icon-chevron-left"></i>
         </a>
     </li>
 	<li>
         <a class="btn btn-default button button-small" href="{if isset($force_ssl) && $force_ssl}{$base_dir_ssl}{else}{$base_dir}{/if}">
-            <span>
-                <i class="icon-chevron-left"></i>{l s='Home'}
-            </span>
+            <span>{l s='Home'}</span>
+            <i class="icon icon-fw icon-chevron-left"></i>
         </a>
     </li>
 </ul>
